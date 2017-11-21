@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>border</title>
+  <style>
+    #borderBox{width:960px ; height: auto; margin :0 auto ;background-color:#ccc;}
+/*    margin을 주면 큰 값만 먹어 간격이 30px이지만 float을 적용하면 실제론 60px가 된다.*/
+    #borderBox > div{width:200px; height:200px; margin: 30px; float:left}
+      .box_01{ background-color:#a1f; border-width:20px; border-style:solid; border-color:#333;}
+      .box_02{ background-color:#6aa;
+        border-top-width:5px; border-top-style:dashed; border-top-color:#fa0;
+        border-bottom-width:10px; border-bottom-style:dotted; border-bottom-color:#0af;}
+      .box_03{ background-color:#9f9;
+        border:15px double #fff;}
+      .box_04{ background-color:#a26;
+        border:30px ridge #af9; border-right-color:transparent; transition:all 800ms ease;
+        /*=rgba(0,0,0,0)(투명하게 하다)*/ }
+      .box_04:hover{border-right-color:#af0;}/*위에 rgba로 쓰면 밑도 rgba로 해야함*/
+      .box_04:active{border-left-color:#fff;}
+      .box_05{ background-color:#ff1;
+    border:50px solid #fff; border-radius:100%; box-sizing: border-box}/*box-sizing은 테두리를 몸안쪽으로 넣음*/
+/*    display코드는 원래 br인 인라인코드여서 안먹지만 블럭으로 강제적으로 블럭코드화 시킴*/
+    /*    br{width: 100%; height:200px; display: block; background-color:#333;} 근데 왜인지 안됨*/
+    .out_box{outline: 50px solid #555;}
+    br{clear: both;}
+/*    // clear: both는 float을 막아주는 역할*/
+
+  </style>
+</head>
+<body>
+<div id="borderBox">
+  <div class="box_01">boder_box_01</div>
+  <div class="box_02">boder_box_02</div>
+  <div class="box_03">boder_box_03</div>
+  <div class="box_04">boder_box_04</div>
+  <div class="box_05 out_box">boder_box_05</div>
+  <br />
+  
+</div><!-- // #borderBox  -->
+
+<!--  script -->
+<script>
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/*layout_01.css*/
+@charset "utf-8";
+/* reset.css */
+html,body{margin: 0; padding: 0;color: #333;}
+h1,h2,h3,h4,h5,h6,
+p,pre,div,{margin: 0;padding: 0;}
+ul,ol,ul,li,dt,dd{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;color: #f0a;}
+a:hover{text-decoration: underline; color: #678; font-weight: bold;}
+img{border:0/*=none*/;}
+
+
+header,section,footer,aside,article,nav,main,figure{display: block;}
+/*
+header : 웹페이지의 상단에 위치 전체의 내용을 총괄하는 영역
+section : 본문내용을 뜻하며, 작은 웹페이지의 영역(내부에는 다시 header, footer, section, article....를 넣을 수 있다.)
+footer,aside : 웹페이지의 가장 하단에 위치(꼭 그렇지는 않다),웹페이지의 정보(회사정보)를 담는것
+aside : 있으면 좋고, 없어도 크게 불편하지 않는 영역
+article : 본문의 내용을 뜻하며, section과 유사하지만 좀더 깊은 의미를 지닌 내용을 담을때 사용
+nav : navigation의 약자로 주로 메뉴영역을 사용할 때 쓰는 영역
+main : 전체를 뜻하는 의미의 코드, 현재는 아직 많이 사용하지 않는다.(특수한 경우 사용)
+figure : img코드를 감쌀때 쓰는 영역, figcaption(이미지 설명)코드와 함께 사용
+template : html문서를 분리해서 사용할때 쓰는 코드(기본문서에서는 사용하지 않음)
+*/
+
+/* common =========================*/
+.clearfix::after{content:" ";display:block; clear:both;}
+
+/* design ===========================*/
+body{background-color: #05a;}
+
+#box{width: 600px;height: auto; margin: 50px auto;}
+/*자식들에 height가 있기에 auto로 주고 gbc는 안보이니깐 없애버리삼*/
+/* #headBox------------------------ */
+  #headBox{width: :100%;height: 100px;background-color: #faa;}
+  /* #contentBox------------------------ */
+  #contentBox{width: :100%;height: auto;}
+/*#contentBox::after{content:" "; display: block; clear:both;}*/
+    #sideArea{width:40%; height: 300px; background-color: #cfa;float:left;}
+    #contentArea{width: 60%; height: 300px; background-color: #ccc;float:left}
+ /* #footBox------------------------ */
+  #footBox{width: 100%;height: 100px;background-color: #0af;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

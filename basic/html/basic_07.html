@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--  css 파일만든 후 화면 분할해서 f5로 새로고침하며 보기 -->
+  <link rel="stylesheet" href="../css/css_basic_07.css" />
+<!--  번개키면 오류나니깐 꼭 번개끄고 하기-->
+  <title>border</title>
+  
+</head>
+<body>
+
+ <div id="first" class="clearfix">
+   <div class="box_01">box_01</div>
+   <div class="box_02">box_02</div>
+   <div class="box_03">box_03</div>
+   <div class="box_04">box_04</div>
+   <div class="box_01">box_01</div>
+   <div class="box_02">box_02</div>
+   <div class="box_03">box_03</div>
+   <div class="box_04">box_04</div>
+<!--  <br /> 사용할수 없다br은 float을 줘서 없어진 부모의 박스를 잡아주는 clear를 쓰기위해 작성하는것! 맨마지막에 쓰는것이 뽀인트-->
+
+</div><!--// #first -->
+<div id="second">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, explicabo.</p>  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, explicabo.</p>  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, explicabo.</p>  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, explicabo.</p>
+</div><!--//#second -->
+
+<div id="third">
+  <ul class="clearfix">
+    <li class="th_01">list_box_01</li>
+    <li class="th_02">list_box_02</li>
+    <li class="th_03">list_box_03</li>
+    <li class="th_04">list_box_04</li>
+    <li class="th_05">list_box_05</li>
+    <li class="th_06">list_box_06</li>
+    <li class="th_07">list_box_07</li>
+    <li class="th_08">list_box_08</li>
+    <li class="th_09">list_box_09</li>
+    <li class="th_10">list_box_10</li>
+  </ul>
+</div><!-- //third-->
+
+<div class="more">
+  마지막 상자!!
+</div>
+
+<div class="before_after"> </div>
+
+
+
+
+
+
+
+
+<!--  script -->
+<script src="../js/src/js_basic_07.js">
+  /*css와 js는 불러올때 전혀 다른 모양으로 쓴다.*/
+  </script>
+</body>
+</html>

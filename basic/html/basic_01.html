@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- !, -->
+<!--emmet.io 단축키 사이트 우측 docu누르고 하단에 chea어쩌고 있음-->
+<html lang="ko-KR">
+<head>
+   <!-- meta:compat  =  비표준브라우저(익스플로러) 가장 최신으로 설정 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--meta:vp 반응형 웹설정 no를 yes로 설정,initial기본값 max,mini사이즈도 바꿔줘야함!-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+       <!--  favicon favorite icon의 약자 인터넷 상단or 주소창옆에 아이콘 띄우기-->
+       <!--  link:favicon -->
+       <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+       <!-- link:touch 애플or다른 브라우져 전용파비콘-->
+       <link rel="apple-touch-icon" href="../favicon.png">
+       
+       <!-- ie setting cc:ie6=ie6보단 같거나 낮으면 이링크로 호환해라 조건부주석 ie만쓰면 현재 버젼-->
+       <!--[if lte IE]>
+       <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+           
+       <![endif]-->
+        <title>basic_01 웹문서 첫번째 제작하기</title>
+      
+          <style>
+/*            body에 margin을 쓰는건 밑에 div를 만들고 margin을 주면 상단에 여백이생겨서 그거없애줌(bracket이 강제적으로 margin생성함 f12 style확인해보면 나옴*/
+            body {margin:0;}
+/* width는 1024지만 960쓴다.(보기좋은 size) margin은 배경을 가운대로 오게함 */
+/*            div#wrapBox or body #wrapBox도 같은 뜻(띄어쓰기는 자손이라는 뜻을 지님 칸을 한칸이든 두칸이든 똑같이 자손뜻)*/
+            #wrapBox {width:960px; height:3500px; background-color:#f06; margin:0 auto;}
+              .du_dung {width:70%; height:300px; bacground-color:#457; margin: auto;}
+    </style>
+    
+</head>
+<body>
+    <div id="wrapBox">
+        <div class="du_dung">뚜둥!! </div>
+     
+    </div>
+    
+    <script>
+//        script에서 div id나 class의 표시법
+    getElementById('wrapBox');
+    getElementsByClassName("du_dung");
+    </script>
+    
+    
+    
+    
+</body>
+</html>

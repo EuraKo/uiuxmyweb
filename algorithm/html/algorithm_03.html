@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>algorithm_03.html</title>
+<script>
+  function second(){
+    var fish= 32,day = 3,turm = 5,cat = 0;
+    for(;day>=0; day++){
+        if(day % turm == 0){
+            cat += 0.5;
+            fish -= 0.5;
+            console.log('먹은 고등어 수' + cat,'남은 고등어 수' + fish,'소요된 날짜'+day);
+        }
+        if(fish == 0){
+         
+      console.log('고등어를 다먹었어요!'); 
+          //break위에 console써야함
+            break;
+        }
+    }
+  
+        console.log('다먹은 날짜!'+ day);
+    }
+  second();
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+    
+    
+<!--    script -->
+    <script></script>
+</body>
+</html>

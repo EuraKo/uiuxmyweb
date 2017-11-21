@@ -1,0 +1,17 @@
+/*layout_01.css*/
+@charset "utf-8";
+/* reset.css */
+html,body{margin: 0; padding: 0;color: #333;}
+h1,h2,h3,h4,h5,h6,
+p,pre,div,{margin: 0;padding: 0;}
+ul,ol,ul,li,dt,dd{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;color: #f0a;}
+
+img{border:0;}
+
+
+header,section,footer,aside,article,nav,main,figere{display: block;}
+/* common */
+.clearfix::after{content:" ";display:block; clear:both;}
+
+/* design */

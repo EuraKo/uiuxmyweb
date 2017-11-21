@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>hw</title>
+
+  <script>
+    function FirstTest() {
+
+      var day = 3,
+        fish = 32,
+        turm = 5,
+        cat = 0;
+
+      day = 1;
+for(;day >=0; day++){
+      if (day % turm == 0) {
+        cat += 0.5; // 고양이가 먹은 캔의 수
+        fish -= 0.5; // 사라지는 캔의 수
+        console.log('고양이가 먹은 고등어의 수:' + cat, '남은 고등어의 수' + fish);
+        //숫자와 숫자를 더하면 더하기,문자와 숫자는 나열됨
+      } //if
+      //               can이 완전히 사라졌을때!
+      if (fish == 0) {
+
+        console.log('고양이가 고등어를 다 먹었어요!' + day);
+        break;
+      }
+}
+
+      day += 2;
+
+      /*반복동작하는 for문을 멈추게 하는 기능! break를 안주면 -로 값이나옴*/
+      //if
+      // for----------------------
+      console.log('고양이가 고등어를 다 먹은 날짜!' + day);
+    } //fuuction
+
+    FirstTest(); //함수호출!마지막 first를 안써주면 콘솔에 안나옴
+  </script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko-Kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Document</title>
+  <style>
+/*    auto:width:100% (바디가 가질수 있는 양)height:최소값*/
+    /*    #margin div{}
+    .first{}
+    #margon .first{}
+    div#margin div{}
+    #margin div.first{}
+div#margin div.first  모두 같음 띄어쓰기는 안에 있는 코드라는 뜻*/
+    #margin {width:auto; height:auto; min-height:20px; background-color:#e2c4c8; float:left}
+/*    margin div와 밑에 first~fourth까지는 같은 말(선택자기에) div에 float을 주면 쭉나열된당!*/
+    #margin div {width:200px; height:200px;}
+/*   alt+shift+방향키 커서 한꺼번에 잡기
+     ctrl+shift+>방향키누르면 옆에 단어가 선택됨*/
+/*    firts에 margin만 주면 위에 배경이랑 같이 떨어짐 위는 안떨어지게 붙잡고 있을라고*/
+   #margin .first {background-color : #f23; /*margin:30px;*/}
+   #margin .sceond {background-color : #987;margin:50px 10px;}
+   #margin .third {background-color : #dae; margin:20px 50px 100px}
+   #margin .fourth {background-color : #aab; /*margin: 20px 30px 40px 50px*/
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    }
+/*    margin-right가 뒤에오는 이유는 basic_04와 설명된바와 같이 뒤에 우선설명 법칙이 적용되기때문에
+    margin전체에 10px를 주고 right를 줘야 right만 20px가 들어간다.
+    margin은 중복되면 큰값이 먹는다*/
+    .more{margin:10px; margin-right:20px}
+/*  float을 안주게 되면 애들이 뒤에숨으니깐 위와 같이left를 주면 바로 옆에 들러붙음 띨라면 margin주기*/
+      #padding {width:auto; height:auto; min-height:50px; background-color:#faa;float:left; margin:10px}
+    #padding div{width:200px; height:200px;}
+      #padding div>.box{width:100%/*이미 위에 div에 100%를 줬기 때문에 200px 적용됨*/; height:100%;background-color:#777; color:#fff;}
+      #padding .first {background-color : #f23; border-top-right-radius:20%; padding:20px}
+      #padding .sceond {background-color : #987;padding:10px 100px}
+      #padding .third {background-color : #dae; padding: 10px 50px 100px;}
+      #padding .fourth {background-color : #aab;padding: 20px 50px 5px 100px;}
+      #padding .more {background-color:#fff; padding:50px;
+/*    content-box는 시험용이기에 basic_04에서 언급한 벤더프릭스이다. 그래서 - -달아줌
+        site:caniuse.comr가면 확인되기때문에 실상 굳이 달필요는 없즘*/
+        -webkit-box-sizing:content-box;
+        -moz-   box-sizing:content-box;
+        -ms-    box-sizing:content-box;
+        -o-     box-sizing:content-box;
+                box-sizing:content-box;
+      ;}
+
+    
+  </style>
+  
+</head>
+<body>
+<div id="margin">
+  <div class="first"> first : margin one </div>
+  <div class="sceond"> sceond : margin two </div>
+  <div class="third"> third : margin three </div>
+  <div class="fourth"> fourth : margin four </div>
+<div class="more">more box</div>
+</div>
+
+<div id="padding">
+  <div class="first"><div class="box"> first : padding one </div></div>
+  <div class="sceond"><div class="box"> sceond : padding two </div></div>
+  <div class="third"><div class="box"> third : padding three </div></div>
+  <div class="fourth"><div class="box"> fourth : padding four </div></div>
+  <div class="more"><div class="box">more box</div></div>
+  </div>
+
+<!--  script  -->
+<script></script>
+</body>
+</html>

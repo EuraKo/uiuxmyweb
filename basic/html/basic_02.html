@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--   keywords:특정언어를 치면 나오게 하는 것 -->
+     <meta name="keywords"
+ comtent="xido, web, html5, basic">
+ <meta name="description" content="xido에게 배우는 웹언어 html 기본지식 이해하기">    <title>Document</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!--[if lt IE 9]>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+<![endif]-->
+
+<style>
+    h1 {color:#acf}
+    </style>
+</head>
+<body>
+    <h1>간단하게 내용 파악하기</h1>
+<!--    script===================================스크립트영역입니다표시-->
+<!--src는 스크립트에서 어떠한 링크를 불러올때 쓴다. -->
+   <script src="http://unpkg.com/jquery">
+    </script>
+   
+     <script>
+    // jquery 함수불러오기 *jquery는 불러온다고 적용되는것이 아니기떄문에 script를 또 써준다.
+            /*jquery의 h1색상표기법*/
+            /*backgroundcolor표시:원칙은 backgroundColor이지만 'backgroun-color'도 적용된다.
+            작은 따옴표를 안쓰면 뒤에 명령어도 안먹음 모든 제이쿼리 코드가 다!*/
+            /*위의 style css보다 jquery의 css가 우선적으로 먹는다*/
+        /*      jqurey의 기본함수식: (function($){()})()   //function안에 함수를 넣어야함 */
+        /*제이쿼리나 자바스크립은 틀리면 f12에 console을 누르면 에러가 뜬당*/
+//                    $('h1').css({backgroundColor:'#aa7',color:'#fff'});
+            
+            /*h1을 click시 함수를 수행하라
+            click시 slideup은 스르륵 사라지게 하기*/
+//              (function($){
+//            $('h1').on('click', function(){
+//                $('h1').slideUp();
+//            });
+                  
+                  /* 위의 식과 동일하나 var(변수)를 쓰면 네임을 바꿔쓸 수 있다.     */
+        (function($){
+            var myh1 = $('h1');
+            myh1.css({backgroundColor:'#aa7',color:'#fff'});
+            myh1.on('click', function(){
+                myh1.slideUp();
+            });
+                        
+        })(this.jQuery);
+    </script>
+</body>
+</html>

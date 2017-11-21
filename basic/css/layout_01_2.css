@@ -1,0 +1,94 @@
+/*layout_01.css*/
+@charset "utf-8";
+/* reset.css */
+html,body{margin: 0; padding: 0;color: #333;}
+h1,h2,h3,h4,h5,h6,
+p,pre,div{margin: 0;padding: 0;}
+ul,ol,ul,li,dt,dd{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;color: #f0a;}
+a:hover{text-decoration: underline; color: #678; font-weight: bold;}
+img{border:0;}
+
+
+header,section,footer,aside,article,nav,main,figure{display: block;}
+
+
+/* common =========================*/
+.clearfix:after{content:" ";display:block; clear:both;}/*ie8새끼부터 footer가 안되서 해야함*/
+.clearfix::after{content:" ";display:block; clear:both;}
+
+.hidden{width: 0;height: 0;overflow:hidden;}
+/*---// 정해진 영역을 숨기는 기능,h들로 영역을 표기해서 씨잘대기없는 글씨들을 숨길때display:none쓰면 난리남*/
+
+/* design ===========================*/
+body{background-color: #035;}
+#box{width:  600px;height: auto;
+  margin: 50px auto;/*ie때문에 달아줌!rem인지를 못함 순서는 무조건 뒤에margin앞에 쓰기*/
+  margin: 3.125rem auto;}
+  
+/* #headBox-------------------------*/
+  #headBox {width: 100%;height: 100px;background-color: #1af;padding: 10px; box-sizing:border-box;}/*안쪽으로 10xp씩 들어갈거라서 padding을 준당;*/
+      h1{width: 100px;height: 80px; background-color: #fff;float:left;/*margin-top: 10px;margin-left: 10px;*/}/*따로따로 세부적으로 margin를 줘야 나중에 밀리는 일이없다;*/
+      #gnbArea{width: 300px;height: 40px;  background-color: #dfdfdf;float:right;
+margin-top: 40px;/*margin-right: 10px;*/}
+        #gnbArea>ul{width: 100%;height: 100%;}
+        #gnbArea>ul>li{width: 10%; height: 100%;background-color: #555;color: #fff;float:left;margin-right: 8%;}
+        #gnbArea>ul>li.last{margin-right:0;}
+
+
+
+
+/*h1은 사이트에서 제목을 뜻하는 의미를 가지고 있고, 가장 중요하다는 의미를 지니고 있음.
+*html5 초기버전에서는 h1을 여러번 사용이 가능(section태그내의 새로운 작은 웹형식을 갖추면)
+*html5.1버전인 현재(2017.10)는 h1을 다시 한번만 사용하기로 변형*/
+
+
+/* #contentBox-------------------------*/
+  #contentBox {width: 100%;height:auto;}
+    #contentArea{/*width: calc(100% / 3);*/width:70% ;height: 150px;float: left;background-color: #acc;}
+    #viewArea{/*width: calc(100% / 3);calc는 잘안먹기때문에 잘안씀*/width: 70%;height: 150px; float:left;background-color: #faf;}
+    #sideArea{/*width: calc(100% / 3);*/width:30% ;height: 300px;float: right;background-color: #fa0;margin-top: -150px;}/*margin-top을 안주면 애들이 밑으로 빠지게됨;*/
+
+/* #footBox-------------------------*/
+  #footBox {width: 100%;height: 100px;background-color: #af1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
