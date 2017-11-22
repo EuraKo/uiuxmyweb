@@ -30,7 +30,7 @@ body{background-color: #035;}
   #headBox {width: 100%;height: 100px;background-color: #1af;padding: 10px; box-sizing:border-box;}/*안쪽으로 10xp씩 들어갈거라서 padding을 준당;*/
       h1{width: 100px;height: 80px; background-color: #fff;float:left;/*margin-top: 10px;margin-left: 10px;*/}/*따로따로 세부적으로 margin를 줘야 나중에 밀리는 일이없다;*/
       #gnbArea{width: 300px;height: 40px;  background-color: #dfdfdf;float:right;
-margin-top: 40px;/*margin-right: 10px;*/}
+      margin-top: 40px;/*margin-right: 10px;*/}
         #gnbArea>ul{width: 100%;height: 100%;}
         #gnbArea>ul>li{width: 10%; height: 100%;background-color: #555;color: #fff;float:left;margin-right: 8%;}
         #gnbArea>ul>li.last{margin-right:0;}
