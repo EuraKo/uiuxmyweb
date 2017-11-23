@@ -20,7 +20,7 @@ header,section,footer,aside,article,nav,main,figure{display: block;}
 /* #headBox------------------------------------*/
 #headBox{width: 100%;height:80px ;background-color:#0fa;padding: 15px 30px;box-sizing:border-box;}
   h1{width:100px ;height:50px ;background-color:#fff;float:left;}
-  #gnbArea{width:450px: ;height:30px ;background-color:#aef;float:right;margin-top: 20px;}
+  #gnbArea{width:450px: ;height:30px ;background-color:transparent;float:right;margin-top: 20px;}
 #gnbArea>ul{width: 100%;height: 100%;}
 #gnbArea>ul>li{width: 100px;height: 100%;background-color: #fff;float:left ;margin-right: 10px;}
 #gnbArea>ul>li.last{margin-right:0;}
@@ -39,8 +39,11 @@ header,section,footer,aside,article,nav,main,figure{display: block;}
 #articleBox{width: 100%;height:auto;}
 #news{width: 50%;height:300px;background-color:#a7a;float:left;padding:25px;box-sizing:border-box ;}
 #news>ul{width: 100%;  height: 100%;}
-#news>ul>li{width: 50%;  height: 50%;background-color: #fff;float:left;padding:5px ;box-sizing:border-box;}
-#news>ul>li>.last{width: 100%; height: 100%;background-color: #ccc;}
+#news>ul>li{width: 47%;  height: 47%;background-color: #fff;float:left;padding:5px ;box-sizing:border-box;}
+  .last_01{margin-right: 6%; margin-bottom: 6%;}
+  .last_02{margin-bottom: 6%;}
+  .last_03{margin-right: 6%;}
+  .last_04{}
 
 
 
