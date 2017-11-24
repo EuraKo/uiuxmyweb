@@ -1,0 +1,79 @@
+@charset "utf-8";
+html,body{margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6,
+p,pre,div{margin: 0;padding: 0;}
+ul,ol,dl,li,dt,dd{margin: 0;padding: 0;list-style:none;}
+ 
+header,section,footer,article,aside,nav,main,figure{display: block;}
+ 
+/*common============================*/
+.clearfix::after{content:" ";display: block;clear:both;}
+.hidden{width: 0 ;height: 0;overflow:hidden;}
+/*design===========================*/
+#box{width:940px ;height: 3465px;background-color: pink;}
+/*headBox----------------------------------*/
+#headBox{width:100% ;height:70px ;background-color:#aaa;padding: 18px 36px;box-sizing:border-box;}
+h1{width: 90px;height: 34px;background-color: #fff;float:left}
+#highBox{width: auto;height: 34px;float:right}
+  #gnbArea{width:320px ;height:100%; ;background-color:#aed;float:left;padding: 5px 0;box-sizing:border-box;margin-right: 36px;}
+    #gnbArea>ul{width: 100%;height: 100%;}
+      #gnbArea>ul>li{width: 50px;height: 100%;background-color: #fff;float:left;margin-right: 17px;}
+      #gnbArea>ul>li.last{margin-right: 0;}
+  
+  #topArea{width:184px ;height:100%; background-color:#de5;float:left;margin-right: 16px;}
+  #clickArea{width: 34px;height:100%; background-color:#fe0;float:left;}
+
+
+/*searchBox----------------------------------*/
+#searchBox{width:100% ;height:450px ;background-color:#da0;padding: 110px 60px; box-sizing:border-box;}
+  #searchAreaTitle{width: 100%;height: auto;padding-right: 215px ;box-sizing:border-box;}  
+    #searchAreaTop{width: 390px; height: 46px;background-color: #e5a;}
+    #searchAreamid{width:390px;height: 18px;background-color: #5ae ;}
+  #searchArea{width: 820px;height: 58px;background-color: #fff;}
+
+/*lnbBox----------------------------------*/
+#lnbBox{width:100% ;height:104px ;background-color:#acf;}
+
+
+/*topBox----------------------------------*/
+#topBox{width:100% ;height:495px ;background-color:#eea;}
+
+
+/*sectionBox----------------------------------*/
+#sectionBox{width:100% ;height:600px ;background-color:#cdf;}
+
+
+/*seeBox----------------------------------*/
+#seeBox{width:100% ;height:344px ;background-color:#bec;}
+
+
+/*lineBox----------------------------------*/
+#lineBox{width:100% ;height:120px ;background-color:#6fe;}
+
+
+/*teamBox----------------------------------*/
+#teamBox{width:100% ;height:330px ;background-color:#e6c;}
+
+
+/*articleBox----------------------------------*/
+#articleBox{width:100% ;height:585px ;background-color:#f8a;}
+
+
+/*emailBox----------------------------------*/
+#emailBox{width:100% ;height:125px ;background-color:#8de;}
+
+
+/*footBox----------------------------------*/
+#footBox{width:100% ;height:196px ;background-color:#7e1;}
+
+
+/*fnbBox----------------------------------*/
+#fnbBox{width:100% ;height:46px ;background-color:#546;}
+
+
+
+
+ 
+ 
+
+ 

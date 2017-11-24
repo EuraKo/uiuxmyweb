@@ -11,7 +11,7 @@ header,section,footer,article,aside,nav,main,figure{display: block;}
 .hidden{width: 0;height: 0;overflow:hidden;}
 /*design=============================*/
 
-#box{width: 978px;height: 1740px;background: #30f;}
+#box{width: 978px;height: 1740px;}
 
 
 
@@ -45,7 +45,7 @@ header,section,footer,article,aside,nav,main,figure{display: block;}
   #enterArea{width:803px ;height:100% ;
     float:left;padding: 7px 100px; box-sizing: border-box;}
     #enterArea>ul{width: 100%;height: 100%;}
-      #enterArea>ul>li{width: 140px;height: 140px;background-color: #af0;float:left;margin-right: 90px;margin-bottom: 6px;}
+      #enterArea>ul>li{width: 140px;height: 140px;background-color: #fff;float:left;margin-right: 90px;margin-bottom: 6px;}
 #enterArea>ul>li.last{margin-right: 0;}
 
 
@@ -88,16 +88,18 @@ padding: 0px 80px 0px;box-sizing: border-box;}
       #articleArea>ul>li.last{margin-bottom: 0;}
       #articleArea>ul>li.right{margin-right: 0;}
 
-  #articleAarList{width:100% ;height:300px;background-color: #dec;}
-    #articleAarList>ul{width: 280px;height: 40px;background-color: #333;color: #777;}
-#articleAarList>ul>li{width: 40px;height: 100%;background-color: #fff;float:left;margin-right: ;}
-
-
+  #articleAarList{width:100% ;height:300px;padding: 70px 350px;box-sizing: border-box;}
+    #articleAarList>ul{width: 280px;height: 40px;background-color: #333;}
+#articleAarList>ul>li{width: 40px;height: 100%;background-color: #fff;float:left;margin-right:8px ;border-radius:20% ;}
+#articleAarList>ul>li.last{margin-right: 0;}
 
 /*footBox-----------------------------------------*/
-#footBox{width: 100%;height:150px ;background-color:#333;}
+#footBox{width: 100%;height:150px ;background-color:#333;padding: 25px 120px;box-sizing:border-box;}
 
+  #under_logo{width: 100px;height: 100px;background-color: #fff;float:left;margin-right: 20px;}
+  #footArea{width:600px ;height:100px ;background-color: #fff;float:left;}
 
+.margin{margin-bottom: 20px;}
 
 
 
