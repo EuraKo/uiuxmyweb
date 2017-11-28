@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+
+<head>
+
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+
+
+<script>
+function first(){
+var count=10;
+for(;count>=1;count--){
+console.log(count );
+}
+}first();
+  
+console.log('// first==========')
+  
+  function second(){
+    var sum=0, n=0, before;
+        for(;n<=100;n++){
+          before=sum;
+          
+          console.log((sum+=n)+"="+before+"+"+n);
+        }
+    console.log(sum);
+        
+  }second();
+  
+  console.log('// second==========')
+  
+  function third(){
+        var sum=0, n=0, before;
+        for(;n<=100;n+=2){
+          before=sum;
+          
+          console.log((sum+=n)+"="+before+"+"+n);
+        }
+    console.log(sum)
+    
+  }third();
+
+  console.log('// third==========')
+  
+    function forth(){
+        var sum=0, n=0, before;
+        for(;n<=100;n++){
+          before=sum;
+          if(n%2==0)
+         { console.log((sum+=n)+"="+before+"+"+n);}
+        }
+    console.log(sum)
+    
+  }forth();
+console.log('// third 조건문으로 작성==========')
+</script>
+
+</head>
+
+<body>
+
+  
+
+</body>
+
+</html>
+
