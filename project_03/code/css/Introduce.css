@@ -1,0 +1,32 @@
+/* project_03_index.css */
+@charset "utf-8";
+
+/* reset.css */
+html,body{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,p,pre,div,ul,ol,li,dl,dt,dd{margin:0; padding:0;border:0;outline:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none; color:#555; }
+a:hover{text-decoration:underline;color:#f27}
+
+/* common.css */
+.clearfix:after{content:" ";display:block;clear:both;}
+.clearfix::after{content:" ";display:block;clear:both;}
+
+#wrap .last{margin-right:0; border-right:0;}
+#wrap .first{margin-left:0; border-left:0;}
+
+.hidden{width:0;height:0;overflow:hidden;}
+
+/* accessibility.css */
+a:focus{outline: 3px solid #fa0; outline-offset:3px;}
+
+/*design.css*/
+#wrap{width:1024px; height:2700px; margin:0 auto;}
+/* headerBox-------------------------  */
+#headerBox{width:100% ;height:auto ;background-color:#ade ;padding:30px ;box-sizing:border-box;}
+  h1{width:100px ;height:100px ;background-color:#fff ;float:left;}
+  #gnbArea{width:795px ;height:40px ;float:right;margin-top: 60px;}
+    #gnbArea>ul{width:100% ;height:100%;}
+    #gnbArea>ul>li{width:180px ;height:40px ;background-color:#ccc;float:left;margin-right: 25px;}
+  
+  
