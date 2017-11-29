@@ -52,8 +52,6 @@ a:focus{outline: 3px solid #fa0; outline-offset:3px;}
 
 
 
-
-
 /* cashBox-------------------------  */
 #cashBox{width:100% ;height:auto ;background-color:#a7d ;padding:30px ;box-sizing:border-box;}
 #cashArea{width: 100;height: 416px;background-color: #dda;}
@@ -68,7 +66,7 @@ a:focus{outline: 3px solid #fa0; outline-offset:3px;}
     #car{width:100% ;height:auto ;}
       #car>ul{width:100% ;height: 100%;}
       #car>ul>li{width:50% ;height:150px ;background-color:#fff;float:left;
-border: 5px solid #777; padding: 5px; box-sizing:border-box;}
+            border: 5px solid #777; padding: 5px; box-sizing:border-box; border-right: 0; border-bottom:0;}
 
 
     #juso{width:100% ;height:90px ;background-color:#ecd;}
@@ -81,11 +79,12 @@ border: 5px solid #777; padding: 5px; box-sizing:border-box;}
 
 /* fnbBox-------------------------  */
 #fnbBox{width:100% ;height:auto ;background-color:#eda ;padding:30px ;box-sizing:border-box;}
-  #fnbBox>ul{width: 100%;height: 100%;}
-    #fnbBox>ul>li{height: 27px;background-color: #fff;float:left ;margin-left: 120px;}
-    #fnbBox>ul>il#fnbTit_01{width: 82px;}
-    #fnbBox>ul>il#fnbTit_02{width: 162px;}
-    #fnbBox>ul>il#fnbTit_03{width: 82px;}
+#fnbArea{width:626px;height: 27px;}
+#fnbArea>ul{width: 100%;height: 100%;}
+    #fnbArea>ul>li{height: 100%;background-color: #fff;float:left ;margin-left: 120px;}
+    #fnbArea>ul>il#fnbTit_01{width: 82px;}
+    #fnbArea>ul>il#fnbTit_02{width: 162px;}
+    #fnbArea>ul>il#fnbTit_03{width: 82px;}
   
 
 

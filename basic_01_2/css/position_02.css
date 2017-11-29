@@ -49,8 +49,20 @@ a:focus{outline: 3px solid #fa0; outline-offset:3px;}
 }
 
 #popupBox>button{padding:0.4rem; background-color:#f77;
-position:absolute; right:-20px;top:-20px; border:0;}
+position:absolute; right:-20px;top:-20px; border:0;
+cursor:pointer;}
+
 #popupBox>button:focus,
 #popupBox>button:hover{background-color:#fa0;}
 #popupBox>p{font-size:1.2rem;color:#333;
 font-family:"myriad pro";}
+
+/* side_box */
+.side_box{width:160px;height:400px;position:fixed;bottom:132px;left:50%;margin-left:31rem;padding:16px;box-sizing:border-box ;background-color:#acd;}
+
+
+
+/* .top_btn */
+#contentBox{position:relative;}
+.top_btn{width:100px;height:100px;position:fixed;bottom:1rem; left:50%;margin-left:31rem;padding:1rem;box-sizing:border-box;background-color:#0af;color:#fff;
+font-weight:bold;}
