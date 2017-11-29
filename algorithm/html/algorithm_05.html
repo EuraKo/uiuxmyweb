@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    console.log('1~100까지 짝수는 빼고 홀수는 더하시오!');
+
+
+function first(){
+    var num=0,sum=0, before;
+    for(;num<=100;num++){
+        before=sum;
+   if(num%2==0){
+       console.log('이전값: '+ before +
+                   '계산값: '+sum+'-'+num+'='+(sum-=num));
+   }else /*if(num%2==1)*/{
+    console.log('이전값: '+ before +
+                '계산값: '+sum+'+'+num+'='+(sum+=num));
+         }
+   }
+
+{console.log(sum);}
+
+}first();
+
+console.log('result 변수를 활용한 같은 문제 다른계산법===============================');
+
+
+function second(){
+var num=0,sum=0, before, result;
+    for(;num<=100;num++){
+        before=sum;
+   if(num%2==0){
+       result=sum-=num;
+       console.log('이전값: '+ before +
+                   '계산값: '+sum+'-'+num+'='+result);
+   }else{
+       result=sum+=num;
+    console.log('이전값: '+ before +
+                '계산값: '+sum+'+'+num+'='+result);
+         }
+   }
+
+console.log('최종값: '+ sum);
+}
+
+second();
+
+
+
+console.log('5!값구하기=============================================');
+
+function third(){
+var num=1,sum=1;{
+for(;num<=5;num++)
+sum*=num;
+
+console.log(sum);
+}//third();
+
+
+console.log('선생님이 한것')
+}third();
+
+function forth(){
+var fi=prompt('정수형의 숫자값을 입력하시오.')
+var multiple=1
+var result,before;
+for(;fi>0;fi--){
+    // console.log(fi);
+    // multiple*=fi;
+    // console.log(multiple);
+
+    // 자신의 값,숫자,결과
+    before=multiple;
+    result=multiple*=fi;
+    console.log('자신의 값: '+before+", 숫자: "+fi+", 결과: "+result );
+}//for
+
+
+}forth();
+</script>
+
+</body>
+</html>
