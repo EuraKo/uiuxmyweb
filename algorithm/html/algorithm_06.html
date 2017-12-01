@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <script>
+  function first(){
+var i=6,j=0;
+for(;j<=i;j++){
+if(i%j==0){
+    console.log(j);
+}
+};
+    };first(); 
+    console.log('=================================')
+function second(){
+var num = function (a,b){
+var i=a,j=b,k=0;
+
+for(;k<=j;k++){
+if(i%k==0 && j%k==0){
+console.log(k);
+}
+}
+    };
+    
+    num(6,10); /* 함수자체로 호출할때는 위에 ;와 떨어트려서 호출해라 */
+};second();
+console.log('=================================')
+//var test ={a:'b',b:'c'}; //콘솔에 test쓰면 나옴
+function third(){
+var Mynumber = function(a,b){
+    var i=a, j=b, k = 0, l;
+    //l의 변수를 통해서 큰숫자를 판단!
+    if(i >= j){
+        l=i;
+    }else{
+        l=j;
+    }
+    console.log(l);
+
+}//myNumBer
+Mynumber(4,7); //콘솔창에 쓰면 나온당
+
+}third();
+
+
+console.log('=================================')
+function forth(){
+var Mynumber = function(a,b){
+    var i=a, j=b, k = 0, l;
+    if(i>j){l=i;}else{l=j;}
+    for(;k<=l;k++){
+        if(i%k==0 && j%k==0){
+        console.log(k);
+    }//if
+}//for
+}//Mynumber
+Mynumber(8,16);
+}forth();
+
+console.log('배열=================================')
+var Mynumber = function(a,b){
+    var i=a, j=b, k = 0, l;
+    var arr =[];
+    if(i>j){l=i;}else{l=j;}
+    for(;k<=l;k++){
+        if(i%k==0 && j%k==0){
+      arr.push(k);
+    }//if
+}//for
+console.log(arr);
+}//Mynumber
+Mynumber(100,100);
+
+
+//var arr=[1,5,10,'afd']; //콘솔에 arr[];쓰고 순서쓰면 호출됨 0부터시작해서 0을 입력하면 1이나옴
+
+    </script>
+</body>
+</html>
