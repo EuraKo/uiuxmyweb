@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array 기능에 대해서 알아봅시다.</title>
+</head>
+<body>
+    <script>
+        //배열이란? array
+        // 여러 데이터(원소)를 하나로 묶어서 나열한 방법(리스트)중 하나
+        //순서위치(인덱스)와 순서에 대응하는 데이터(값)들로 이루어진 자료 구조를 나타낸다.
+        
+        //기본형태
+        // new Array(); //1. new는 인스턴스화(우리식으로 설명하자면:복제) 처리
+        //[];
+        
+
+        // console.log(arr); //undefined
+        //var arr = [];
+       // console.log(arr); //[]
+         //  hoist현상:인형뽑기
+         //1.js :주어진 공간에서 변수가 이동할 수 있는 만큼 끌어올려진다.
+         //2.변수에 대한 이름은 올라가지만, 그것에 대한 값은 원위치에 머문다. ex)리조트에 놀러가는데 유라가 갑자기 국들고 간다고 낀다.
+         //3.각자의 값을 확인하기전에는 undefined라고 나옴 그래서 var변수대신 let(부분변수:상황에 따라서 바뀜),const(상수:한번정의 하면 안변함 다이아몬드가공)근데 ie는안먹어서 안씀
+
+        //length는 개수를 파악하는 property(속성length()괄호가없음 괄호가 있으면 메소드임)
+        // console.log('문자의 길이를 구해보세요!!!'.length);
+        // console.log(arr.length);
+        // console.log(arr[0]);
+//undefined : 미정의 라는 의미를 가지고 있다.
+//즉, 선언된 변수, 함수를 실행시 값이 정의 내린것이 없다면 표기되는 형태 
+//---------------------------------------------------------------------------------
+//하나의 정의된 변수를 다른변수에 대입시키면 해당하는 값이 대입처리된다.
+    // var a=10;
+    // var b=a;
+    // console.log(a,b); //10,10
+    // a=20;
+    // console.log(a,b); //20,10
+    // b=a;
+    // console.log(a,b); //20,20
+    // a=200;
+//console.log(a,b);//200,20
+// 기본적으로 변수에 처리되는 값 자체는 대입시킨 또다른 변수의 자동 대입처리되지 않는다.
+
+//----------------------------------------------------------------------------------------
+
+function first($){
+var arrVar = []; 
+//참조변수:변수의 고유값이 숫자 통째로 변경된값, 문자형태가 아니었을때 (위는 배열[]이기때문에 참조변수가된다)원래의 변수의 위치를 참조 예)신주소 변경,상완오빠여자친구유무 해당하는 값자체를 기억하는것이아니고 원래 변수의 주소를 기억
+var arr2 = arrVar;
+// console.log(arrVar,arr2); //[][]
+//arrVar = [10,20,50]; //통으로 재정의 한 것이기 때문에 arrVar는 참조변수의 역할을 하지 못한다.
+                        // var arrVar = [];위의 값자체필요없이새롭게 변경 답: [10,20,50] []
+arr2[0] = 20;
+arr2[1] = 15; //[1]번째 숫자만 갈아치움 답:[20,15] [20,15]
+arr2[10]=1;
+// console.log(arrVar,arr2);
+// console.log(arrVar[5]);//5번째는 정의 된값이 없어서 undefined나옴
+// console.log(arrVar[-1]);//undefined
+}
+//first();
+
+//.push()
+//push() : 배열형식에서 뒤에 추가하는 기능 
+function second($){
+var myArr=[];
+// console.log(myArr);
+myArr.push(1);
+// console.log(myArr);
+myArr.push('two');
+// console.log(myArr);
+myArr.push([1,10,4]);
+// console.log(myArr,myArr.length);
+// console.log(myArr[2][1]); //이중배열,고차원배열이라고함 당장 쓸일없음 2번째 배열안에 1번째를 나타내시오
+//배열은 2또는 다차원배열의 형태로도 사용할수있다.
+// var testArr=[[1,4,0,10,50],['a','b','c','d'],[1,10,'a','543']];
+// console.log(testArr[2][3]); //답:543
+myArr.push('a','b');
+// console.log(myArr);
+
+//unshift() : 배열형식에서 앞에 추가하는 기능
+myArr.unshift('first');
+myArr.unshift('more first');
+myArr.unshift('very more first');
+// console.log(myArr);
+// console.log(myArr.length);
+//--------------------------------------------------
+//현상태 체크,
+console.log(myArr);
+//pop(); 배열형식에서 뒤에 내용을 삭제 (1개씩)
+myArr.pop();
+myArr.pop();
+console.log(myArr);
+//pop();안에는 어떤값도 쓸수없음 안먹음 
+
+//shift(); 배열형식에서 앞에 내용을 삭제 (1개씩)
+myArr.shift();
+console.log(myArr);
+
+//splice(); 배열형식에서 (지정된 위치, 갯수) 지움
+//만약, 갯수가 적혀있지 않다면 지정된 위치 모두 삭제
+myArr.splice(3,2);
+// 4번째 위치에서 1개의 배열요소를 삭제처리,(3,0)은 아무것도 안지움
+
+console.log(myArr);
+
+// splice()기능 2번째!!!
+//splice(a,b,c....): 배열형식에서 중간에 내용삭제처리하고,
+//해당내용에 추가로 삽입처리하는 기능
+
+myArr.splice(1,0,'삭제없이 하나추가','삭제없이 하나더 추가','삭제없이 세번째 추가');
+console.log(myArr);
+
+myArr.splice(1,3,'3개 지우고 대신추가','하나더 추가?');
+console.log(myArr);
+
+
+} //second();
+
+function third(){
+  var linkTest=['http://naver.com','http://daum.net','http://google.com',
+              'http://www.gdweb.co.kr','http://caniuse.com','http://www.w3school.com'];
+  function WriteDocument(){
+  document.write('<a href="'+linkTest[0] +'">test1</a> <br />');
+  document.write('<a href="'+linkTest[1] +'">test2</a> <br />');
+  document.write('<a href="'+linkTest[2] +'">test3</a> <br />');
+  document.write('<a href="'+linkTest[3] +'">test4</a> <br />');
+  document.write('<a href="'+linkTest[4] +'">test5</a> <br />');
+  document.write('<a href="'+linkTest[5] +'">test6</a> <br />');
+  //제이쿼리 헤리프안에 쿼리용어쓸려면 꼭 쌍따옴표 홑따옴표 쓰고 써야함 ++의 기능은 나열하겠다. 
+  //document는 기본개념임.만약 위에 내용이있다면 싹사라지고 이것만 남음 예)알고리즘_7.html num5참조!
+}
+WriteDocument();
+  linkTest.splice(2,1,'#');
+  document.addEventListener('click',WriteDocument);
+//test3번이 주소가 없어지고 아무것도 없음으로 바뀜
+}
+//third();
+
+//--------------------------------------------------
+//concat() :분리되어 있는 배열내용들을 하나로 합쳐처리하는 방법
+//새로운 변수에 합칠때! allArr새로운 변수에 fristArr과 secondArr을 합치겠습니다그리고 thirdArr도합치게뜸
+function forth(){
+var firstArr =['연필','샤프','볼펜'];
+var secondArr =['자','칼','가위','풀'];
+var thirdArr=['remote','tumbler'];
+var allArr = firstArr.concat(secondArr,thirdArr);
+console.log(allArr);
+//---------------------------------------------------
+//indexOf() : 배열요소의 원하는 값이 몇번째 인지 확인하는 기능
+var myI = allArr.indexOf('remote');
+//console.log('remote : ',myI); //해당하는 위치가 존재하면 위치의 값(index)을 나타낸다.
+
+myI = allArr.indexOf('remate');
+//console.log('remate : ',myI); //해당하는 값이 없으면 위치의 값은 '-1'을 나타낸다.
+
+// myI=allArr.indexOf('자',-1);
+// console.log(myI);//두자리는 아직은 확인이어려움니당........
+
+//-------------------------------------------------------
+//join() : 배열요소를 문자로 전환하는 방법
+var myJoin =allArr.join(); //배열요소를 하나로 합쳐 문자로 만드는 방법 숫자로변환은안됨
+console.log(myJoin); 
+myJoin =allArr.join('---*^0^*---'); //중간에 추가할수있음
+console.log(myJoin);
+
+//------------------------------------------------------
+// tostring() :문자화 처리하는 방법
+var myToString = allArr.toString();//해당 요소를 문자로 처리하는 방법(배열이면 ,로 내용을 구분한다.)
+console.log(myToString);
+var n = 18392;
+console.log(n);
+console.log(n.toString());//숫자든 문자든 무조건 문자화시켜버림 검정글씨로 나온다.
+}
+forth();
+
+
+
+        </script>
+</body>
+</html>
