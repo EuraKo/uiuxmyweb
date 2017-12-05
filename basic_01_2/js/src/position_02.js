@@ -22,7 +22,7 @@ $('#popupBox').fadeIn();
 var sideBox = $('.side_box');
 var topBtn = $('.top_btn');
 
-sideBox.delay(500).fadeOut();
+sideBox.delay(1000).fadeOut();
 var content = $('#contentBox').offset().top;
 console.log(content);
 $(window).on('scroll',function(){
