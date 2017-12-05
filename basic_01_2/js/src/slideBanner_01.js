@@ -3,9 +3,38 @@
 //즉시 실행 함수(IIFE)
 (function($){
 //jQuery
-$('.banner>ul>li').last().prependTo('.banner>ul'); //마지막 li를 앞으로
-$('.banner>ul').css({marginLeft:'-100%'}); //왼쪽으로 붙혀라
-$('.banner').css({overflow:'hidden'}); //숨어라
+var banner =$('.banner');
+var bannerUl= banner.children('ul'); 
+//var bannerUl= $('.banner>ul');과 같은뜻 위에서 선언을 했기에 중복되지않게 쓰는 것
+var bannerLast =bannerUl.children('li');
+
+bannerLast.last().prependTo(bannerUl); //마지막 li를 앞으로 .last()대신에 .eq(-1)라고 써도됨
+bannerUl.css({marginLeft:'-100%'}); //왼쪽으로 붙혀라
+banner.css({overflow:'hidden'}); //숨어라
+
+
+var leftBtn=$('.btn').children('button').first();
+var rightBtn=$('.btn').children('button').last();
+
+leftBtn.on('click',function(e){
+  e.preventDefault();//??
+
+  bannerUl.stop(false,true).animate({marginLeft:0},function(){
+    bannerLast=bannerUl.children('li').last();
+    bannerLast.prependTo(bannerUl);
+    bannerUl.css({marginLeft:'-100%'});
+  });
+}); //leftBtn 클릭
+
+rightBtn.on('click',function(e){
+  e.preventDefault();//??
+
+  bannerUl.stop(false,true).animate({marginLeft:'-200%'},function(){ //.animate떄문에 누른만큼 이동계속함,그래서 .stop(false,true)
+    bannerLast=bannerUl.children('li').first();
+    bannerLast.appendTo(bannerUl);
+    bannerUl.css({marginLeft:'-100%'});
+  });
+  }); //rightBtn클릭
 
 })(this.jQuery);
 

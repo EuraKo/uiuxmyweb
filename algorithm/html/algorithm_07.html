@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>공약수 3자리구하기</title>
+</head>
+<body>
+<input type="text" id="input1" placeholder="숫자를 입력하세요.">
+<input type="text" id="input2" placeholder="숫자를 입력하세요.">
+<input type="text" id="input3" placeholder="숫자를 입력하세요.">
+<button type="button">확인</button> <!-- prompt대신에 쓰면 브라우져에 나온당. -->
+
+    <script>
+    function first($){
+var num1 = prompt("정수형 숫자를 입력하시오.");
+var num2 = prompt("정수형 숫자를 입력하시오.");
+var num3 = prompt("정수형 숫자를 마지막으로 한번 더 입력하시오.");
+
+
+
+var num = [num1,num2,num3];
+console.log('작성한 값 세가지는:', num); //,는 둘다표현해라는 뜻 +써도됨
+
+    }//first();
+
+console.log('사용한 값이 숫자인지 아닌지 판단=========================');
+
+    function second(a,b,c){ 
+        
+var num1 =typeof(a);
+var num2 =typeof(b);
+var num3 =typeof(c);
+console.log(num1,num2,num3);//console창에 second('a','b','c'); string string string /second(1,2,3); number number number 이라고 표시됨
+if(num1 == 'number' && num2 == 'number' && num3 == 'number'){
+    console.log('모두 숫자인것을 확인하였습니다.');
+}else{
+    console.log('일부 숫자가 아닌것이 있습니다.\n 다시 입력하세요.') //\n강제로 줄바꿈하겠다
+}
+       
+    }
+    //second(); 끝에다가 주석을 달면 console에서 함수를 넣어서 호출하겠습니다.임 주석풀면 바로 호출하겠습니당
+
+
+console.log('prompt로  호출하기==========================================')
+        // function Num2(){
+        //     var a=prompt('숫자1');
+        //     var b=prompt('숫자2');
+        //     var c=prompt('숫자3');
+
+        //     var n1 = parseInt(a);
+        //     var n2 = parseInt(b);
+        //     var n3 = parseInt(c);
+        //     console.log(a,b,c);
+        //     console.log(n1,n2,n3);
+        // }
+//Num2(); //문자를 쓰면 nan이라고 뜸 숫자가 아닙니다.parseInt 시작이 숫자이면 섞어써도 숫자로 인지 문자로 쓰면 문자로 인식 예:1a 2 3>1 2 3/a1 2 3>non 2 3
+
+
+
+function Num3(){
+            var a=prompt('숫자1');
+            var b=prompt('숫자2');
+            var c=prompt('숫자3');
+
+            var n1 = parseInt(a);
+            var n2 = parseInt(b);
+            var n3 = parseInt(c);
+if(isNaN(n1) || isNaN(n2) || isNaN(n3)){ //isNaN은 이것은 숫자가아닙니다 !isNaN쓰면 반대 
+    console.log('일부 숫자가 아닌것이 있습니다.');
+}else{
+    console.log('모두 숫자입니다.');
+}
+        }
+//Num3();
+
+
+console.log('algorithm_06이랑 같은 식을 이어붙힌것');
+var Mynumber = function(a,b,c){
+    var i=a, j=b, p=c, k = 0, l; //l=임의의 변수에다가 가장큰값을 집어넣을게라는 뜻 그래서 값이 없듬
+    var arr =[];
+    if(i>=j && i>=p){
+        l=i;
+       
+    }else if(j>=p){
+        l=j;
+        }else{
+            l=p;
+        }
+    for(;k<=l;k++){
+        if(i%k==0 && j%k==0 && p%k ==0){
+      arr.push(k);
+    }//if
+}//for
+console.log(arr);
+}//Mynumber
+//Mynumber(100,2,1200);
+
+//sort를 이용한 정렬방법 위의 Mynumber와 같은 답이나옴>
+
+var Num4 = function(a,b,c){
+    var i=a, j=b, p=c, k = 0, l; //l=임의의 변수에다가 가장큰값을 집어넣을게라는 뜻 그래서 값이 없듬
+    var arr =[];
+    
+    var firstArr=[i,j,p];
+firstArr.sort(function(ll,kk){return kk-ll});
+console.log(firstArr); //sort는 값을 순서대로 재정리함.
+console.log(firstArr[0]);
+}//Num4
+Num4(100,2,1200);
+
+function Num5(){
+    var a = parseInt(document.getElementById('input1').value); //parsInt강제로 숫자로 치환
+    var b = parseInt(document.getElementById('input1').value);
+    var c = parseInt(document.querySelector('#input3').value);
+    var n1,n2,n3;
+    //console.log(a,b,c);
+    document.write(a,b,c);
+    var n1 =Number.isInteger(a);
+    var n2 =Number.isInteger(b);
+    var n3 =Number.isInteger(c);
+    if(n1 && n2 && n3){
+        //console.log('모두 숫자');
+        
+        document.write('모두 숫자당');
+    }else{
+       // console.log('일부숫자가 아닙니다.');
+       document.write('일부숫자가 아님');
+    }
+}
+//Num5();
+// 이것은 jQuery 식표현:$('button').on('click',num5); 
+document.querySelector('button').addEventListener('click',Num5);//javascript로 식을 쓰면 javascript식으로 불러와야한다.
+
+    </script>
+
+
+
+</body>
+</html>
