@@ -1,6 +1,6 @@
 
 /*design.css*/
-#wrap{width:960px; height:auto; margin:0 auto;}
+#wrap{width:100%; min-width: 960px;height:auto; margin:0 auto;}
 /* headerBox-------------------------  */
 #headerBox{width:100% ;height:auto ;background-color:#ade ;padding:30px ;box-sizing:border-box;border-bottom:2px solid #00b7ff;}
   h1{width:100px ;height:100px ;background-color:#fff ;float:left;}
@@ -13,10 +13,20 @@
 
 
 /* adBox-------------------------  */
-#adBox{width:100% ;height:550px ;background-color:#cde ;padding:30px ;box-sizing:border-box;}
+#adBox{width:960px ;height:550px ;background-color:#cde ;box-sizing:border-box;position:relative;margin: 0 auto;}
+.btn{width: 95%;height: 0;top: 50%;left:2.5%;margin-top: -70px;position:absolute;}
+.btn>button{width: 20px;height: 50px;background-color: #D0EBF6;}
+.btn>button:first-child{float:left;}
+.btn>button:last-child{float:right;}
+.banner{width: 100%;height: 100%;}
+.banner>ul{width: 300%;height: 100%;}
+.banner>ul>li{width: 33.333333%;height: 100%;float:left; text-align:center; line-height:500px;font-size:3rem;}
+.banner>ul>li.banner_content_1{background-color: #fff;}
+.banner>ul>li.banner_content_2{background-color: #aaa;}
+.banner>ul>li.banner_content_3{background-color: #eee;}
 
 /* playBox-------------------------  */
-#playBox{width:100% ;height:auto ;background-color:#fff;padding:30px ;box-sizing:border-box;}
+#playBox{width:960px ;height:auto ;background-color:#fff;padding:30px ;box-sizing:border-box;margin: 0 auto;}
 #playBox>ul{width: 100%;height: 100%;}
 #playBox>ul>li{width: 155px;height:auto;float:left;margin-right: 28px;}
 #playPic{width: 100%;height: 155px;background-color: #D0EBF6;border-radius:50%;margin-bottom: 10px;}  
@@ -28,7 +38,7 @@
   position:fixed;bottom:1rem;left:50%;margin-left:31rem;padding:2rem;box-sizing:border-box;}
 
 /* timeBox-------------------------  */
-#timeBox{width:100% ;height:auto ;background-color:#00b7ff ;padding:30px ;box-sizing:border-box;}
+#timeBox{width:960px;height:auto ;background-color:#00b7ff ;padding:30px ;box-sizing:border-box;margin: 0 auto;}
 
 
 #timeArea{width: 100%;height:395px ;background-color:#fff;}
@@ -36,12 +46,12 @@
 
 
 /* cashBox-------------------------  */
-#cashBox{width:100% ;height:auto ;background-color:#D0EBF6 ;padding:30px ;box-sizing:border-box;}
+#cashBox{width:960px ;height:auto ;background-color:#D0EBF6 ;padding:30px ;box-sizing:border-box;margin: 0 auto;}
 #cashArea{width: 100;height: 416px;background-color: #fff;}
 
 
 /* noticeBox-------------------------  */
-#noticeBox{width:100% ;height:auto ;background-color:#cff ;padding:30px ;box-sizing:border-box;}
+#noticeBox{width:960px ;height:auto ;background-color:#cff ;padding:30px ;box-sizing:border-box;margin: 0 auto;}
   #noticArea{width:550px ;height:auto ;float:left;}
     #notic{width:100% ;height:390px ;background-color:#fff;}
 
@@ -74,8 +84,6 @@
    #footBox>h2{width:100px ;height:100px ;background-color:#fff ;float:left;margin-right: 30px;}
    #footArea{width: 770px;height: 100px;background-color: #fff;float:left;}
  
-
-
 
 
 

@@ -33,7 +33,7 @@ rightBtn.on('click',function(e){
     bannerLast=bannerUl.children('li').first();
     bannerLast.appendTo(bannerUl);
     bannerUl.css({marginLeft:'-100%'});
-  });
+  });/**/
   }); //rightBtn클릭
 
 })(this.jQuery);
