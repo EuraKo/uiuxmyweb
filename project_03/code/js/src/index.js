@@ -10,7 +10,7 @@
 
   ban.css({overflow:'hidden'});
 
-  var leftBtn=$('.btn').children('bttton').first();
+  var leftBtn=$('.btn').children('button').first();
   var rightBtn=$('.btn').children('button').last();
 
   leftBtn.on('click',function(e){
