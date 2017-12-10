@@ -15,4 +15,4 @@
 
 /* accessibility.css */
 
-a:focus, button:focus{outline:2px solid #d07; background-color:#d07;color:#fff;}
+a:focus, button:focus{outline:2px solid #d07; background-color:#fff;color:#fff;}

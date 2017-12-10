@@ -1,0 +1,87 @@
+/*project_02_mefactory_index.css*/
+/*#wrap---------------------------------------*/
+#wrap{width: 100%;min-width: 960px;height: auto;margin: 0 auto;position:relative;}
+
+
+/*#headBox--------------------------------*/
+#headBox{width: 100%;height: auto;background-color: #fff;padding: 30px;box-sizing:border-box;position:relative;}
+h1{width: 150px;height: 150px;background-color:#DF1566;float:left;position:absolute;left:50%;margin-left: -70px}
+#snsArea{width: 260px;height: 50px;float:left;}
+#snsArea>ul{width: 100%;height: 100%;}
+#snsArea>ul>li{width: 50px;height: 100%;background-color: #F9D6DD;float:left;margin-right: 20px;border-radius: 50%}
+
+
+#searchArea{width: auto;height: auto;float:right;margin-top: 60px;}
+  #search{width:100%;height: 40px;border:1px solid #222;box-sizing:border-box;margin-bottom: 10px;}
+    .search_bar{width: 150px;height: 100%;float:left;padding: 10px;box-sizing: border-box; }
+    #search>button{width: 40px;height: 100%;background-color: #f9d6dd;float:left;border-left:1px solid #222;}
+ 
+    #login{width: 100%;height: 100%;}
+    #login>li{width: 40px;height: 40px;background-color: #f9d6dd;float:left;margin-right: 35px;}
+
+
+/*#gnbBox-------------------------------------------*/
+#gnbBox{width: 100%;height: auto;padding: 30px;box-sizing: border-box;
+border-top:10px solid #df1566;border-bottom:10px solid #df1566;}
+#gnbBox>ul.menu_bar{width: 960px; height: 100%;margin: 0 auto;}
+
+#gnbBox>ul.menu_bar>li{float:left;margin-right: 40px;font-size:2rem;text-align: center;text-transform: uppercase;}
+#gnbBox>ul.menu_bar>li>a{color: #222;}
+#gnbBox>ul.menu_bar>li>a:hover{color: #df1566;}
+
+
+/*#menuBox-------------------------------------------------*/
+#menuBox{width: 960px;height: auto;margin: 0 auto;}
+.show{display:;}
+  #menuBox>ul{width: 100%;height: 100%;border: 5px solid #df1566;border-top: 0;}
+    #menuBox>ul>li{width: 190px;height: auto;font-size:1.25rem;font-weight: bold;float:left;}
+ /*   #menuBox>ul>li.brand{}
+    #menuBox>ul>li.product{}
+    #menuBox>ul>li.comunity{}
+    #menuBox>ul>li.gallery{}
+    #menuBox>ul>li.mypage{}*/
+
+
+/*#bannerBox-------------------------------------------*/
+#bannerBox{width: 960px;height: 500px;margin: 0 auto;position:relative;margin-bottom: 20px}
+#bannerBox>.btn{width: 90%;height: 0;top: 50%;left:5%;margin-top: -5%;position:absolute;background-color: #f9d6dd;}
+#bannerBox>.btn>button{width: 40px;height: auto;background-color: #df1566;font-size:3rem;}
+#bannerBox>.btn>button:first-child{float:left;}
+#bannerBox>.btn>button:last-child{float:right;}
+
+
+#bannerBox>ul{width: 400%;;height: 100%;}
+#bannerBox>ul>li{width: 25%;;height: 100%;float:left;}
+.ad_01{background-color: #aaa;}
+.ad_02{background-color: #ffa;}
+.ad_03{background-color: #aff;}
+.ad_04{background-color: #eed;}
+
+
+
+/*#contentBox-------------------------------------------*/
+#contentBox{width: 960px;height: auto;margin: 0 auto;padding: 30px;box-sizing: border-box;}
+#hitBox{width:100%;height: 100% ;}
+
+  .title{font-size:2rem;text-align:center;border-top:10px solid #df1566;margin: 0 auto;margin-bottom: 30px;}
+  #hitBox>.title{width: 80px;}
+  .box_area{width: 100%;height: auto;margin-bottom: 40px}
+  .box_area>ul{width:100%;height: 100%;}
+  .box_area>ul>li{width: 225px; height:400px;float:left;border:1px solid #222;box-sizing:border-box;}
+      .img{height: 75%;border-bottom: 1px solid #222;}
+      .text{padding: 20px;font-size:1.5rem;}
+      .text>p{margin-bottom: 10px}
+
+#saleBox{width: 100%;height: 100%;}
+#saleBox>.title{width: 110px;}
+
+/*#sideBox-----------------------------------------------*/
+#sideBox{width: 60px;height: auto;position:absolute;right: 0;top:900px;bottom: 0;}
+#sideBox>.logo{width: 60px;height: 60px;background-color:#df1566; }
+#sideBox>ul{width: 100%;height: 100%;padding: 30px 7px;box-sizing: border-box;background-color:#f9d6dd;}
+#sideBox>ul>li{width: 45px;height: 45px;background-color: #df1566;border-radius: 50%;margin-bottom: 20px;}
+.top_btn{width: 60px;height: 60px;background-color:#df1566;bottom: 0; }
+
+
+/*#footBox-------------------------------------------*/
+#footBox{width: 960px;height: auto;padding: 30px;box-sizing: border-box;margin: 0 auto;border-top: 2px solid #222;}
