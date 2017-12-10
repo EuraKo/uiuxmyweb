@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>font</title>
+<style>
+/*
+font-family
+font-weight
+font-style
+font-size
+line-height
+letter-spacing
+word-spacing
+text-transform
+text-indent
+font-stratch
+color
+*/
+.font_01{font-family: "myriad pro",arial,dotum, sans-serif;}
+.font_02{font-weight: bold; /* 100 ~ 900 */}
+.font_03{font-style: italic;/*nermal | italic*/}
+.font_04{font-size:1.5rem;}
+.font_05{line-height:120% ;/*줄의 간격 위아래 한꺼번에 처리되며 120%가 기본적임
+단위값을 적지않으면 rem단위로 처리*/}
+.font_06{/*font:weight style size/line family*/
+font:italic 1.3rem/1.4 "myriad pro",dotum,san-serif;}
+.font_07{letter-spacing: 0.24rem;/*%안먹을시 rem으로 처리*/}
+.font_08{word-spacing: 2rem;}
+.font_09{font-kerning:none;/* 자간 삼각형글꼴처리도 정리해서 사용 ie안됨*/}
+.font_10{text-transform:uppercase /*대소문자처리 uppercasr | lowercase |capitalize(해당단어의첫글자만대문자)*/}
+.font_11{text-indent: 3rem /*들여쓰기*/}
+.font_12{text-indent: -3rem;}
+.font_13{font-stretch:condensed;/*ultra-condensed | extra-condensed | condensed | semi-condensed | normal |
+  semi-expanded | expanded |extra-expanded | ultra-expanded*/;}
+.font_14{border-top: 1px solid blue;width: 600px;height: 50px;background-color: #ccc;
+                     margin:0;padding: 0;text-align: center;/*left | right | conter | justify(양쪽 정렬:여러줄로 처리되었을떄 사용가능 br/코드있으면 안먹음) */}
+.font_15::first-letter{text-transform: uppercase;font-size:2rem;color:#0dd;}
+.font_16:first-line{color:#fac;}
+
+/*
+width: 0;height: 0;text-indent: -9999px;(text-indent: 플러스로 오는건 밑으로 떨어지고 안보이게하려면 -9999px rem씀)
+*/
+
+li:nth-child(5){font-size: 2rem;}/*연속된 코드(태그)일 경우에만 사용가능(오로지 li)*/
+div{width: 800px;height: auto;border:2px solid #cca;p0.5rem;box-sizing: border-box;;margin: 0 auto;}
+div>h2,div>p,div>pre{margin: 0;padding: 0;font-size:1rem;font-weight:normal;line-height: 120%;}
+div>h2:nth-of-type(2){color: #f0a;}  
+div>p:first-of-type{color: #aaa;}
+div>p:last-of-type{color: #f05;}
+div>p:nth-of-type(3){color: #00a;}
+/*nth-of-type(){} : 동레벨에서 연속되어 있지않더라도 순서에 맞는 요소를 찾아서 선택하는 기능*/
+</style>
+
+</head>
+<body>
+  <h1>font 이해하기</h1><hr />
+<ul>
+    <li class="font_01">1_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_02">2_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_03">3_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_04">4_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_05">5_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_06">6_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_07">7_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_08">8_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_09">9_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_10">10_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_11">11_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_12">12_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_13">13_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_14">14_아무거나 텍스트만들기<br /> Lorem ipsum dolor sit amet.</li>
+    <li class="font_15">15_아무거나 텍스트만들기 Lorem ipsum dolor sit amet.</li>
+    <li class="font_16">16_아무거나 텍스트만들기 <br />
+                        Lorem ipsum dolor sit amet<br />
+                        Lorem ipsum dolor sit amet..</li>
+                         </ul>
+<div>
+  <h2>child test</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint!</p>
+    <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint!</pre>
+    <h2>child test2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint!</p>
+</div>
+</body>
+</html>

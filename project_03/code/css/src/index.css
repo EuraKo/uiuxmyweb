@@ -29,8 +29,8 @@
 #playBox{width:960px ;height:auto ;background-color:#fff;padding:30px ;box-sizing:border-box;margin: 0 auto;}
 #playBox>ul{width: 100%;height: 100%;}
 #playBox>ul>li{width: 155px;height:auto;float:left;margin-right: 28px;}
-#playPic{width: 100%;height: 155px;background-color: #D0EBF6;border-radius:50%;margin-bottom: 10px;}  
-#playTit{width: 100%;height: 27px;background-color: #fff;}
+.playPic{width: 100%;height: 155px;background-color: #D0EBF6;border-radius:50%;margin-bottom: 10px;}  
+.playTit{width: 100%;height: 27px;background-color: #fff;}
 
 /* top_btn */
 #playBox{position:relative;}
@@ -47,7 +47,7 @@
 
 /* cashBox-------------------------  */
 #cashBox{width:960px ;height:auto ;background-color:#D0EBF6 ;padding:30px ;box-sizing:border-box;margin: 0 auto;}
-#cashArea{width: 100;height: 416px;background-color: #fff;}
+#cashArea{width: 100px;height: 416px;background-color: #fff;}
 
 
 /* noticeBox-------------------------  */
