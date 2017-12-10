@@ -36,7 +36,7 @@ var contentBox=$('#contentBox');
     contentBox.html('<p></p>');
 var myp=contentBox.find('p');
 myp.text('글자를 입력해 보겠습니다.~0~');
-myp.css({color:'#fff',fontSize:'2rem',fontWeight:'bold',textAlign:'center',paddingTop:20+'rem'});
+myp.css({color:'#fff',fontSize:'2rem',fontWeight:'bold',textAlign:'center',paddingTop:'50rem'});
 
 
 
