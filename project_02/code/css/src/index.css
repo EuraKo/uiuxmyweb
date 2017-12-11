@@ -23,23 +23,14 @@ h1{width: 150px;height: 150px;background-color:#DF1566;float:left;position:absol
 /*#gnbBox-------------------------------------------*/
 #gnbBox{width: 100%;height: auto;padding: 30px;box-sizing: border-box;
 border-top:10px solid #df1566;border-bottom:10px solid #df1566;}
-#gnbBox>ul.menu_bar{width: 960px; height: 100%;margin: 0 auto;}
+#gnbBox>dl{width: 960px; height: 100%;margin: 0 auto;}
 
-#gnbBox>ul.menu_bar>li{float:left;margin-right: 40px;font-size:2rem;text-align: center;text-transform: uppercase;}
-#gnbBox>ul.menu_bar>li>a{color: #222;}
-#gnbBox>ul.menu_bar>li>a:hover{color: #df1566;}
+#gnbBox>dl>dt{float:left;margin-right: 40px;font-size:2rem;text-align: center;text-transform: uppercase;}
+#gnbBox>dl>dt>a{color: #222;}
+#gnbBox>dl>dt>a:hover{color: #df1566;}
+#gnbBox>dl>dd{margin: 0 auto;}
 
 
-/*#menuBox-------------------------------------------------*/
-#menuBox{width: 960px;height: auto;margin: 0 auto;}
-.show{display:;}
-  #menuBox>ul{width: 100%;height: 100%;border: 5px solid #df1566;border-top: 0;}
-    #menuBox>ul>li{width: 190px;height: auto;font-size:1.25rem;font-weight: bold;float:left;}
- /*   #menuBox>ul>li.brand{}
-    #menuBox>ul>li.product{}
-    #menuBox>ul>li.comunity{}
-    #menuBox>ul>li.gallery{}
-    #menuBox>ul>li.mypage{}*/
 
 
 /*#bannerBox-------------------------------------------*/
@@ -76,11 +67,13 @@ border-top:10px solid #df1566;border-bottom:10px solid #df1566;}
 #saleBox>.title{width: 110px;}
 
 /*#sideBox-----------------------------------------------*/
-#sideBox{width: 60px;height: auto;position:absolute;right: 0;top:900px;bottom: 0;}
-#sideBox>.logo{width: 60px;height: 60px;background-color:#df1566; }
+#sideBox{width: 180px;height: auto;position:absolute;right: 0;top:1020px;bottom: 0;}
+#sideBox>.logo{width: 100%;height: 60px;background-color:#df1566; }
 #sideBox>ul{width: 100%;height: 100%;padding: 30px 7px;box-sizing: border-box;background-color:#f9d6dd;}
-#sideBox>ul>li{width: 45px;height: 45px;background-color: #df1566;border-radius: 50%;margin-bottom: 20px;}
-.top_btn{width: 60px;height: 60px;background-color:#df1566;bottom: 0; }
+#sideBox>ul>li{width: 100px;}
+#sideBox>ul>li>.icon{width: 45px;height: 45px;background-color: #df1566;border-radius: 50%;margin-bottom: 20px;float:left;}
+#sideBox>ul>li>.name{float:left;}
+.top_btn{width: 100%;height: 60px;background-color:#df1566;bottom: 0; }
 
 
 /*#footBox-------------------------------------------*/
