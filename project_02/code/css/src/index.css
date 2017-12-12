@@ -69,9 +69,9 @@ border-top:10px solid #df1566;border-bottom:10px solid #df1566;}
 #sideBox{width: 180px;height: auto;position:absolute;right: 0;top:1020px;bottom: 0;}
 #sideBox>.logo{width: 100%;height: 60px;background-color:#df1566; }
 #sideBox>ul{width: 100%;height: 100%;padding: 30px 7px;box-sizing: border-box;background-color:#f9d6dd;}
-#sideBox>ul>li{width: 100px;}
-#sideBox>ul>li>.icon{width: 45px;height: 45px;background-color: #df1566;border-radius: 50%;margin-bottom: 20px;float:left;}
-#sideBox>ul>li>.name{float:left;}
+#sideBox>ul>li{width: auto;height: 45px;}
+#sideBox>ul>li>.icon{width: 45px;height: 45px;background-color: #df1566;border-radius: 50%;margin-bottom: 20px;float:left;margin-right: 10px;}
+#sideBox>ul>li>.name{width: 55px;height: 45px;float:left;text-align:center;}
 .top_btn{width: 100%;height: 60px;background-color:#df1566;bottom: 0; }
 
 
