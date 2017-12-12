@@ -21,14 +21,13 @@ h1{width: 150px;height: 150px;background-color:#DF1566;float:left;position:absol
 
 
 /*#gnbBox-------------------------------------------*/
-#gnbBox{width: 100%;height: auto;padding: 30px;box-sizing: border-box;
+#gnbBox{width: 100%;height: auto;background-color: transparent;padding: 20px;box-sizing: border-box;
 border-top:10px solid #df1566;border-bottom:10px solid #df1566;}
-#gnbBox>dl{width: 960px; height: 100%;margin: 0 auto;}
-
-#gnbBox>dl>dt{float:left;margin-right: 40px;font-size:2rem;text-align: center;text-transform: uppercase;}
-#gnbBox>dl>dt>a{color: #222;}
-#gnbBox>dl>dt>a:hover{color: #df1566;}
-#gnbBox>dl>dd{margin: 0 auto;}
+#gnbBox>ul{width: 960px;height: auto;margin: 0 auto;}
+#gnbBox>ul>li{width: 100px;float:left;margin-left: 80px;}
+#gnbBox>ul>li>dl{width: 100%;height: 100%;margin: 0 auto;}
+#gnbBox>ul>li>dl>dt{font-size:2rem;margin-bottom: 20px}
+#gnbBox>ul>li>dl>dd{margin: 0 auto;background-color: inherit;}
 
 
 
