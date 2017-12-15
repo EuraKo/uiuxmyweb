@@ -49,9 +49,9 @@ var sideBtn=sideBox.children('button');
 
 sideBtn.on('click',function(e){
   e.preventDefault();
-  sideBox.css({right:'0'},function(){
-    sideBox.removeAttr('style');
-  });
+  // sideBox.css({right:'0'},function(){
+  //   sideBox.removeAttr('style');
+  // });
      var style = parseInt(sideBox.css('right'));
    console.log(style);
 
