@@ -6,7 +6,7 @@ var attOffset=$('.attachment').offset().top;
 // console.log(attOffset);
 
 // + 브라우져 내부의 높이값 확인
-// var dH=$('body').height();
+ var dH=$('body').height();
 //height()에 수치를 주면 바디의 높이값이 바뀜 안쓰면 높이값을 가져오는것임 너값이 얼마니?
 /* 주어진 크기 값을 가져오는 방법
 * width,height모두 메소드에서 값을 입력하지않고 처리하면 파악하는 기능
@@ -21,7 +21,7 @@ outetWidth(true) ; 가로값 파악(margin까지 포함)
 // console.log(dH);
 
 //offset().top값 변경
-// var customOffset=attOffset - dH;
+var customOffset=attOffset - dH;
 // console.log(customOffset);
 
 //브라우져 상에서 스크롤바가 움직였을때 이벤트처리
@@ -41,3 +41,23 @@ $(window).on('scroll',function(){
 
 
 })(this.jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

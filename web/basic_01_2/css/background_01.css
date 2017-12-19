@@ -66,7 +66,7 @@ background-image: url("../img/ny_city.jpg");
 
 .size_1{background-size:cover;}
 .size_2{background-size:contain;}
-.size_3{background-size:50% 30%;}
+.size_3{background-size:100% 100%;}
 .size_4{background-size: auto 100% ;}
 
 /*.attachment--------------------------------------*/
