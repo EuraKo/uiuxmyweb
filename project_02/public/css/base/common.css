@@ -14,10 +14,10 @@
 #wrap .bottom{margin-bottom:0;border-bottom:0;}
 
 #wrap .check{width: 15px;height: 15px;border:2px solid #222;margin-right: 10px;}
-#wrap .tit{height: auto;margin: 0 auto;}
+#wrap .tit{height: auto;margin: 0 auto;margin-bottom: 30px;}
 #wrap .tit>h2{text-align:center;border-top:10px solid #df1566;}
 
 /* accessibility.css */
 
 a:focus, button:focus{outline:2px solid #222;background-color:transparent;color:#222;cursor: pointer;}
-a:hover{cursor: pointer;}
+a:hover,button:hover{cursor: pointer;}

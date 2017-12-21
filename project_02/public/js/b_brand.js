@@ -8,7 +8,8 @@ select.load(file, function(){
   var childrenBox=select.children();
 
   if(backgroundIf == true){
-    var bgColor = ({'backgroundColor':bgColor});
+    var bgColor = childrenBox.css('backgroundColor');
+    select.css({'backgroundColor':bgColor});
   }
 });
   }
