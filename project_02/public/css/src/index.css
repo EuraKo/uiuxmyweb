@@ -26,7 +26,8 @@ h1{width: 150px;height: 150px;background-color:#DF1566;float:left;position:absol
 #gnbBox{width: 100%;height: auto;background-color: transparent;padding: 20px;box-sizing: border-box;
 border-top:10px solid #df1566;border-bottom:10px solid #df1566;margin-bottom: 30px;}
 #gnbBox>ul{width: 960px;height: 100%;margin: 0 auto;}
-#gnbBox>ul>li{width: 100px;float:left;margin-left: 80px;}
+#gnbBox>ul>li{float:left;margin-left: 80px;}
+
 #gnbBox>ul>li>dl{width: 100%;height: auto ;margin: 0 auto;}
 #gnbBox>ul>li>dl>dt{font-size:2rem;margin-bottom: 20px}
 #gnbBox>ul>li>dl>dd{margin: 0 auto;background-color: inherit;
@@ -72,8 +73,8 @@ border-top:10px solid #df1566;border-bottom:10px solid #df1566;margin-bottom: 30
 
 /*#sideBox--------------------------------------------*/
 .sideBoxWrap{position:relative;}
-#sideBox{width: 180px;height: auto;position:absolute;right: -120px;
-transition:all 300ms ease-out;top: -20px;}
+#sideBox{width: 180px;height: auto;position:fixed;right: -120px;
+transition:all 300ms ease-out;top: 350px;}
 #sideBox.style{right: 0;}
 #sideBox>button{width: 100%;height: 60px;background-color:#df1566;font-size:3rem; }
 #sideBox>ul{width: 100%;height: 100%;padding: 30px 7px;box-sizing: border-box;background-color:#f9d6dd;}

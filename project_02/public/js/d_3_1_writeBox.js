@@ -19,17 +19,21 @@ select.load(file, function(){
   var baseUrl='../../html/src/';
   var loadFile={headBox : baseUrl+'all/headBox.html',
   gnbBox : baseUrl+'all/gnbBox.html',
-  g_1_searchBox :  baseUrl+'g_search/g_1_searchBox.html',
-  g_2_contentBox :  baseUrl+'g_search/g_2_contentBox.html',
-  listBtnBox :  baseUrl+'all/listBtnBox.html',
+  d_3_1_1_typeBox :  baseUrl+'d_community/d_3_1_write/d_3_1_1_typeBox.html',
+  d_3_1_2_writeBox :  baseUrl+'d_community/d_3_1_write/d_3_1_2_writeBox.html',
+  d_3_1_3_alarmBox :  baseUrl+'d_community/d_3_1_write/d_3_1_3_alarmBox.html',
+  d_3_1_4_writeBtnBox :  baseUrl+'d_community/d_3_1_write/d_3_1_4_writeBtnBox.html',
+
   sideBox : baseUrl+'all/sideBox.html',
   footBox : baseUrl+'all/footBox.html'};
 
 ImportFile('headBox',loadFile.headBox, true);
 ImportFile('gnbBox' , loadFile.gnbBox, true);
-ImportFile('g_1_searchBox' , loadFile.g_1_searchBox, true);
-ImportFile('g_2_contentBox' , loadFile.g_2_contentBox, true);
-ImportFile('listBtnBox' , loadFile.listBtnBox, true);
+ImportFile('d_3_1_1_typeBox' , loadFile.d_3_1_1_typeBox, true);
+ImportFile('d_3_1_2_writeBox' , loadFile.d_3_1_2_writeBox, true);
+ImportFile('d_3_1_3_alarmBox' , loadFile.d_3_1_3_alarmBox, true);
+ImportFile('d_3_1_4_writeBtnBox' , loadFile.d_3_1_4_writeBtnBox, true);
+
 ImportFile('sideBox', loadFile.sideBox, true);
 ImportFile('footBox',loadFile.footBox, true);
 
