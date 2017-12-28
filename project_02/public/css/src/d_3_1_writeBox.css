@@ -2,7 +2,7 @@
 
 .title_name{margin-right: 30px;}
 /*d_3_1_1_typeBox-------------------*/
-#typeBox{width: 960px;margin: 0 auto;background-color: #F9D6DD;padding: 30px 120px;box-sizing: border-box;}
+#typeBox,#alarmBox,#writeBtnBox{width: 960px;margin: 0 auto;background-color: #F9D6DD;padding: 30px 120px;box-sizing: border-box;}
 #typeBox>div{float: left;}
 
 
@@ -30,9 +30,23 @@
 .write_title{height: 30px;}
 .write_text{height: 300px;}
 
-/*d_3_1_3_alarmBox----------------*/
+/*d_3_1_3_alarmBox(위에 typeBox랑 같이있음)----------------*/
 
+#alarmBox>div{float: left;}
+#alarmBox>div>div>ul>li{float: left;margin-right: 30px;}
 
+.sms_area{margin-bottom: 30px;}
+.sms_area>ul{width: 100%;height: auto ;}
+.howto{width: 60px;padding: 5px;box-sizing: border-box;}
+.alarm_text{width: 200px;height: 30px;background-color: #fff;border:1px solid #222;}
+
+/*writeBtnBox----------------*/
+#writeBtnBox{background-color: #fff;}
+#writeBtnBox>ul{width: 250px;height: 100%;margin: 0 auto;}
+#writeBtnBox>ul>li{width: 120px;height: 30px;float: left;margin-right: 10PX;}
+#writeBtnBox button{width: 100%;height: 100%;background-color:#F9D6DD; }
+#writeBtnBox button:hover{background-color: #DF1566;color: #fff;}
+#writeBtnBox span
 
 
 
