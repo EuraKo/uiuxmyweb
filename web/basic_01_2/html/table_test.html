@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>weather test</title>
+
+<style>
+  table,tr,th,td,thead,tbody,tfoot{margin: 0; padding: 0;border: 0; border-collapse: collapse;}
+.hidden{width: 0;height: 0;position: absolute;z-index: -100;overflow: hidden;}
+
+  table{width: 600px;height: 177px;}
+thead{padding: 10px;box-sizing: border-box;}
+
+thead>tr>th:first-of-type{text-align:left;text-indent: 0.5rem}
+thead>tr>th>button{background-color: #ecf5fe;margin-bottom: 0.3rem}
+thead span{font-weight: normal;font-size:0.8rem;}
+
+tbody{padding: 10px;box-sizing: border-box;}
+tbody>.top_line>th{width: 100%;height: 2px;background-color: #888;}
+tbody>tr>td{border-right: 1px solid #888;margin: 0;padding: 0;}
+tbody>tr>td:last-of-type{border-right: 0;}
+tbody>tr{border-right:0;}
+.day,.data{text-align: center;}
+span{color: #888;}
+
+.day>td{width: auto;}
+.data>td{width: auto; font-size: 0.8rem}
+.img>td{width: auto;text-align: center;}
+
+.img>td>img{width: 50px;height: 50px;margin: 0 auto;}
+img{margin:0 auto;}
+
+
+.gap{height: 20px;}
+tfoot>tr>th{height: 0.5px;background-color: #888;}
+
+--------------
+
+
+
+
+</style>
+
+
+</head>
+<body>
+  
+<table summary="2017년 마지막주 일주일 날씨 예보">
+  <caption class="hidden">2017년 마지막주 일주일 날씨 예보</caption>
+  <thead>
+    <tr>
+      <th colspan="5">일주일예보 <span>| 서울 &#46; 경기 &gt; 서울</span></th>
+      <th><button type="button">날씨영상보기</button></th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class="top_line"><th colspan="6"><!-- 빈공간 --></th></tr>
+<tr class="gap"><td colspan="6"></td></tr>  
+<tr class="day">
+  <td>화<span>/12.17</span></td>
+  <td>수<span>/12.18</span></td>
+  <td>목<span>/12.19</span></td>
+  <td>금<span>/12.20</span></td>
+  <td>토<span>/12.21</span></td>
+  <td>일<span>/12.22</span></td>
+</tr>
+<tr class="img">
+  <td><img src="../img/weather/50x50_am_01.png" alt="이천십칠년 십이월 십칠일 날씨 맑음"> </td>
+  <td><img src="../img/weather/50x50_am_01.png" alt="이천십칠년 십이월 십팔일 날씨 맑음"> </td>
+  <td><img src="../img/weather/50x50_am_03.png" alt="이천십칠년 십이월 십구일 날씨 구름조금"> </td>
+  <td><img src="../img/weather/50x50_am_03.png" alt="이천십칠년 십이월 이십일 날씨 구름많음"> </td>
+  <td><img src="../img/weather/50x50_am_03.png" alt="이천십칠년 십이월 이십일일 날씨 구름많음"> </td>
+  <td><img src="../img/weather/50x50_am_03.png" alt="이천십칠년 십이월 이십이일 날씨 구름많음"> </td>
+</tr>
+<tr class="data">
+  <td>맑음<br><span>29&#8451;</span>/18&#8451;</td>
+  <td>맑음<br><span>29&#8451;</span>/18&#8451;</td>
+  <td>구름조금<br><span>29&#8451;</span>/18&#8451;</td>
+  <td>구름많음<br><span>29&#8451;</span>/18&#8451;</td>
+  <td>구름많음<br><span>29&#8451;</span>/18&#8451;</td>
+  <td>구름많음<br><span>29&#8451;</span>/18&#8451;</td>
+</tr>
+
+<tr class="gap"><td colspan="6"></td></tr>  
+<tfoot>
+  <tr><th colspan="6"><!-- 빈공간 --></th></tr>
+</tfoot>
+</tbody>
+</table>
+
+
+
+
+</body>
+</html>
