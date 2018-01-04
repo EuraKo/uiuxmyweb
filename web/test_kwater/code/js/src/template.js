@@ -7,7 +7,7 @@ function ImportFile(makeDivName, linkFile, wrapColorBoolean){
 
   var wrap = $('#wrap');
   //1. 파일이름을 만들어서 부모태그를 생성
-  var wrapDiv = wrap.append('<dic class="'+ makeDivName + 'Wrap"></div>');
+  var wrapDiv = wrap.append('<div class="'+ makeDivName + 'Wrap"></div>');
   //2. 생성된 부모태그에 필요한 파일을 load() 처리
   var select = $('.'+ makeDivName + 'Wrap');
   select.load(linkFile, function(){

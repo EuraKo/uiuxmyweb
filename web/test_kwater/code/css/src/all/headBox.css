@@ -10,7 +10,7 @@ h1>a{background-image: url("../../../images/logo.jpg");}
     #unb>ul{width: auto;height: auto;}
     #unb>ul>li{height: 18px;float: left;font-size: 0.875rem; text-transform: uppercase;margin-left: 1rem;position: relative;line-height: 18px;}
     #unb>ul>li:first-child{margin-left: 0;}
-    #unb>ul>li:before{content:" ";display: block;width: 1px;height: 8px;background-color: #777;position: absolute;top:5px;left: -0.5rem;}
+    #unb>ul>li:before{content:" ";width: 1px;height: 8px;background-color: #777;position: absolute;top:5px;left: -0.5rem;}
      #unb>ul>li:first-child:before{display: none;}
 
 
