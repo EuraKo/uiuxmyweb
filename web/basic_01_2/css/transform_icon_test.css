@@ -1,0 +1,80 @@
+#wrap{width: auto;padding: 30px;box-sizing: border-box;}
+ul{}
+li{width: 50px;height: 50px;float: left;margin-right: 10px;background-color: #888;border-radius: 15px;text-align: center;line-height: 50px;color: #fff;
+transition:all 300ms linear;}
+li:nth-of-type(1){}
+li:nth-of-type(1):hover{transform:rotateZ(45deg);}
+
+li:nth-of-type(2){}
+li:nth-of-type(2):hover{transform:translateY(-50px);}
+
+li:nth-of-type(3){}
+li:nth-of-type(3):hover{transform:scale(0.5);}
+
+li:nth-of-type(4){}
+li:nth-of-type(4):hover{transform:scale(1.5);}
+
+li:nth-of-type(5){}
+li:nth-of-type(5):hover{box-shadow: 5px 5px 5px #aaa;}
+
+li:nth-of-type(6){}
+li:nth-of-type(6):hover{background-color: #00f;}
+
+li:nth-of-type(7){}
+li:nth-of-type(7):hover{transform:scale(0.5,1); }
+
+li:nth-of-type(8){}
+li:nth-of-type(8):hover{transform:scale(1,0.5);}
+
+li:nth-of-type(9){}
+li:nth-of-type(9):hover{transform:rotateZ(1turn);}
+
+li:nth-of-type(10){}
+li:nth-of-type(10):hover{background-color: rgba(100,100,100,0.5)}
+
+ul>li:nth-of-type(11){background-color: #eee;transition:background-color 2s ease;}
+li:nth-of-type(11):hover{background-color: #888;}
+
+li:nth-of-type(12){}
+li:nth-of-type(12):hover{width: 100px;background-color: #00f;}
+
+li:nth-of-type(13){}
+li:nth-of-type(13):hover{    -webkit-animation:spin 1s  alternate infinite linear;}
+         @-webkit-keyframes spin{
+                      0%{-webkit-transform:rotate(0deg);}
+                      100%{-webkit-transform:rotate(180deg);}}
+
+li:nth-of-type(14){}
+li:nth-of-type(14):hover{-webkit-animation:colorize 3s alternate infinite linear;}
+        @-webkit-keyframes colorize{
+            0%{background:#333;} 
+            50%{background:#ff0;} 
+            100%{background:#00f;}}
+
+li:nth-of-type(15){}
+
+li:nth-of-type(15):hover{          -webkit-animation:shape 1s alternate infinite ease-in-out;
+           }
+            
+            @-webkit-keyframes shape{
+                100%{-webkit-border-radius:50%;
+                background:#ff0;
+                -webkit-transform:rotate(180deg);
+                opacity:.3;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

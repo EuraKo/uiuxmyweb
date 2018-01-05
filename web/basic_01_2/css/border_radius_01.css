@@ -2,4 +2,19 @@
 .bdr{width: 100%;height: auto;}
 .bdr:after{content:" ";display: block;clear:both;}
 .bdr>li{width: 200px;height: 200px;margin: 1rem;float: left;
-background-color: #f06;color: #fff;text-align: center;line-height: 200px;}
+background-color: #f06;color: #fff;text-align: center;line-height: 200px;transition: all 400ms ease-in-out;}
+.bdr>li:hover{background-color: #0ac;font-size: 2rem;}
+
+.bdr>li:nth-child(1):hover{border-radius: 1rem;}
+.bdr>li:nth-child(2):hover{border-radius: 10%;}
+.bdr>li:nth-child(3):hover{border-radius: 1rem 2rem 3rem 40%;}
+.bdr>li:nth-child(4):hover{border-radius: 2rem 30%;}
+.bdr>li:nth-child(5):hover{border-radius: 1rem 40% 10%;}
+/*border-radius는 1개 2개 4개만 먹음 5번처럼 3개는 안먹음*/
+.bdr>li:nth-child(6):hover{border-top-left-radius: 20%;}
+.bdr>li:nth-child(7):hover{border-top-left-radius:20% 50%;}
+.bdr>li:nth-child(8):hover{border-bottom-right-radius: 50%;}
+.bdr>li:nth-child(9):hover{border-radius: 50%;}
+.bdr>li:nth-child(10):hover{border-radius: 100%;}
+.bdr>li:nth-child(11):hover{border-bottom-right-radius: 30%;border-bottom-left-radius: 30%;}
+.bdr>li:nth-child(12):hover{border-radius:50%;border-top-right-radius: 0;}

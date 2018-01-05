@@ -1,0 +1,108 @@
+#wrap{width: 100%;height: auto;padding: 1rem;box-sizing: border-box;background-color: #ccc;}
+h1{padding: 1rem;border-bottom: 1px solid #333;text-align: center;}
+.ani_box{width: 100%;height: auto;border:2px solid #07a;}
+.ani_box>li{width: 100px;height: 100px;border-radius: 50%;background-color: #f67;color: #fff;text-align: center;
+line-height: 100px;margin-bottom: 1rem;}
+.ani_box>li>a{color: inherit;font-weight: bold;}
+
+/*animation : animation이란?transition과 유사하지만, 단편적인 형태를 띄는겟이 아닌, 반복효과를 처리할 수 있는 기능이다.
+-animation의 기능은 혼자 사용하는 것이 아닌 해당한 애니메이션의 시간에 따라 처리기능을 부여하기위해 별도의 시간의 흐름을 제어하는 기능이 존재(@keyframes{})
+
+1.animation-name: animation을 실해시 동작 제어할 keyframe의 이름을 선택 /transition의 property와 유사
+(a{animation-name:xido;}
+@keyframe xido {}
+
+var z = function(){}
+)
+
+2.animation-duration: animation을 실행하는 시간
+
+3.animation-timing-function: ani를 실행하는 기능(linear,ease,ease-in,ease-in,ease-out,ease-in-out,step-start,step-end .........)
+
+4.animation-delay: 지연시간
+5.animation-iteration-count:반복횟수, infinite(무한)
+6.animation-direction:진행방향(normal , reverse ,alternate(왔다리갔다리),alternate-reverse) 
+7.animation-fill-mode:움직이지 않는 상황에 위치하는 곳(none,forwards,backwards,both)
+8.animation-play-state:조건부 상태처리(paused,running)
+
+animation:name duration time-fn delay count direction fill play;
+축약형 => animation:name duration count direction;
+@keyframes {}
+@-webkit-keyframes name { 
+  0% {} | from {}
+  10% {}
+  35% {}
+  .
+  .
+  100% {} | to {}
+}띄어쓰기를하는게 가독성도 좋고 안띄면 %는 가끔안먹는다.
+*/
+
+.ani_box:hover>li:nth-of-type(1){animation-name: ani_01; animation-duration: 2s;animation-iteration-count: 2; animation-direction: alternate-reverse;
+animation-fill-mode: backwards;}
+@keyframes ani_01 {
+  0% {background-color: #fff;transform:translateX(0) rotate(0deg)}
+  50% {background-color: #f06;}
+  100% {background-color: #0af;transform:translateX(500px) rotate(3turn);}
+}
+
+.ani_box>li:nth-of-type(2){animation:ani_01 4s infinite reverse;}
+
+.ani_box>li:nth-of-type(3){animation: ani_02 4s infinite normal;
+}
+@keyframes ani_02 {
+  0% {transform:translate(0, 0) rotate(0deg)}
+  25%{transform:translate(400px,0) rotate(1turn)}
+  50%{transform:translate(400px, 300px) rotate(2turn);}
+  75%{transform:translate(0, 300px) rotate(3turn);}
+  100%{transform:translate(0, 0) rotate(4turn);}
+}
+
+
+@keyframes ani_03 {
+  0% {bottom:-20%;}
+  30%{transform:rotate(-180deg);}
+  100% {bottom:100%;}
+}
+
+.ani_box>li:nth-of-type(4){position: fixed; right: 20%; background-color: #0f4;color: #717177; animation:ani_03 5s infinite normal;}
+
+.ani_box:active>li{animation-play-state:paused;}
+
+
+.ani_box:hover>li:nth-of-type(5){}
+.ani_box:hover>li:nth-of-type(6){}
+.ani_box:hover>li:nth-of-type(7){}
+.ani_box:hover>li:nth-of-type(8){}
+.ani_box:hover>li:nth-of-type(9){}
+.ani_box:hover>li:nth-of-type(10){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
