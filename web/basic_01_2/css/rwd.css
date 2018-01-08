@@ -1,0 +1,33 @@
+#wrap{width: 100%;min-width: 960px;	height: auto;min-height: 800px;margin: 0 auto;background-color: #ccc;}
+#headBox{width: 100%;height: 100%;background-color: #ddd;}
+#bannerBox{margin-top: 0.5rem;width: 100%;height: 500px;background-color: #cca;}
+#contentBox{width: 960px;height: 1200px;margin: 0 auto;background-color: #ff7}
+#footBox{width: 100%;height: 50px;background-color: #555;}
+
+/*반응형웹제작(@media screen)에는 ie를 고려할 필요가 없다
+그렇다고 ie를 아예생각안하고제작하는것은 아니다.
+최소한의 내용은 제작을하고, 이외의 부분에 대해서는 최신브라우저를 고려해서 제작
+*/
+/*mobile max480*/
+/*@media print and (max-width:210mm) {} 인쇄용*/
+/*@media handhels and (max-width:210mm) {} 사람의 손으로 들수있는 핸드폰...
+and기호는 생략가능하나 쓰는걸추천*/
+@media screen and (max-width:480px) {
+	#wrap{/* width: 100%; */background-color: #fa0;}
+}
+/*값을 안쓰면 밖에 설정된 값을 가져온다.*/
+
+/*table-V(android) min481~max768*/
+@media screen and (min-width: 481px) and (max-width:767px) {
+#wrap{background-color: #0cf;}
+}
+
+/*laptop*/
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+	#wrap{background-color: #aff}
+}
+
+/*full-page*/
+@media screen and (min-width: 1367px) {
+	#wrap{background-color: #ffa;}
+}
