@@ -1,0 +1,62 @@
+
+/*base---------------------------------*/
+#wrap{width: 100%;min-width: 960px;height: auto;margin: 0 auto;}
+#headBox{width: 100%;height: 400px;padding: 30px;box-sizing: border-box;background-color: #50f;}
+.gnb_area{height: 40px;}
+h1{width:200px ;height: 100%;float: left;background-color: #fff;}
+.gnb_btn{width: 600px;height: 100%;float: right;background-color: #fff;}
+
+#bannerBox{width: 100%; min-width: 960px; height: 100px;background-color: #fff;margin: 0 auto;}
+ul{width: 100%;height: 100%;padding: 30px 30px;box-sizing: border-box;}
+li{width: 400px;height: 30px;background-color: #55f;float: left;}
+li:first-of-type{margin-right: 30px;}
+
+#contentBox{width: 100%;display: none;background-color: #ddd;}
+#articleBox{width: 100%;display: none;background-color: #a5a}
+#fnbBox{width: 100%;height: 600px;background-color: #0a0;}
+#footBox{width: 100%;height: 150px;background-color: #0aa;}
+
+/*max 480---------------------------*/
+@media screen and (max-width: 480px) {
+#wrap{min-width: auto;}
+#headBox{height: 200px;}
+.gnb_area{height: 30px;}
+h1{width: 20.833333vw/*100/480*100*/;margin-left: 150px;}
+.gnb_btn{width: 30px;}
+#bannerBox{width: 100vw;/*480/480*100*/}
+ul{padding: 15px 30px;}
+li{float:none;width:83.33333vw /*400/480*100=83.333333*/;}
+li:first-of-type{margin-bottom: 10px}
+#contentBox{display: block;height: 150px;}
+#articleBox{display: block;height: 180px;}
+#fnbBox{height: 220px;}
+#footBox{height: 50px;}
+}
+/*max 768----------------------------*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+#wrap{min-width: auto;}
+#headBox{min-height: 200px}
+h1{margin-left:45.572916vw;/*350/768*100*/}
+.gnb_btn{width: 40px;}
+#bannerBox{min-width: 481px;}
+ul{padding: 3.90625vw 3.90625vw/*30/768*100*/;}
+li{width:40vw /*400/768*100=52.083333*/;}
+li{}
+#contentBox{display: block;height: 250px;}
+#fnbBox{height: 380px;}
+#footBox{}
+}
+/*max 960-----------------------------*/
+@media screen and (min-width: 769px) {
+#wrap{min-width: auto;}
+#headBox{}
+h1{}
+.gnb_btn{width:62.5vw /*600/960*100*/;}
+#bannerBox{min-width:769px;}
+ul{padding: 3.901170vw 6.501950vw/*30px 50px*/}
+li{width:39.011703vw /*300/769*100*/;}
+li{}
+#contentBox{}
+#fnbBox{}
+#footBox{}
+}
