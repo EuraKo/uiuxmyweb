@@ -1,0 +1,29 @@
+/*main_full min481 ~ max767px*/
+@media screen and (min-width: 481px) and (max-width: 767px;){
+/*headBox-------------------------*/
+#headBox{}
+
+/*gnbBox-------------------------*/
+#gnbBox{}
+
+/*newsBox-------------------------*/
+#newsBox{}
+ul{}
+li{}
+/*platBox-------------------------*/
+#platBox{}
+
+/*contentBox-------------------------*/
+#contentBox{}
+ul{}
+li{}
+/*sideBox-------------------------*/
+#sideBox{}
+
+/*fnbBox-------------------------*/
+#fnbBox{}
+
+/*footBox-------------------------*/
+#footBox{}
+h2{}
+}

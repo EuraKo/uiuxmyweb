@@ -1,0 +1,29 @@
+/*basic 960px*/
+#wrap{width: 100%;min-width: 60rem;background-color: #aaa;}
+/*headBox-------------------------*/
+#headBox{width: 100%;height:26.25rem ;background-color: #e0d3e5;}
+
+/*gnbBox-------------------------*/
+#gnbBox{width: 100%;height:7.5rem ;background-color: #c1a9cb;}
+
+/*newsBox-------------------------*/
+#newsBox{width: 100%;height:auto ;}
+ul{width: 100%;height: 100%;}
+li{width: 50%;height: 30rem;float: left;background-color:# #a180b2; }
+li:last-child{background-color: #82589a;}
+/*playBox-------------------------*/
+#playBox{width: 100%;height:3.75rem ;background-color:#936c72;}
+
+/*contentBox-------------------------*/
+#contentBox{width: 100%;height:auto ;}
+ul{}
+li{}
+/*sideBox-------------------------*/
+#sideBox{width: 100%;height:15rem ;background-color: #778692;padding: 1.875rem;box-sizing: border-box;}
+.side_area{width: 100%;height: 100%;background-color: #e0d3e5;}
+/*fnbBox-------------------------*/
+#fnbBox{width: 100%;height:7.5rem ;background-color: #009245;}
+
+/*footBox-------------------------*/
+#footBox{width: 100%;height:13.125rem ;background-color: #00a99d;padding: 1.875rem;box-sizing: border-box;}
+h2{width: 9.375rem;height: 9.375rem;background-color: #a154fc;}   

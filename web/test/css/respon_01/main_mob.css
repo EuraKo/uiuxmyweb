@@ -1,0 +1,30 @@
+/*main_mobile max480px*/
+@media screen and (max-width: 480px;){
+	#wrap{min-width: auto;}
+/*headBox-------------------------*/
+#headBox{height: 240px;}
+
+/*gnbBox-------------------------*/
+#gnbBox{}
+
+/*newsBox-------------------------*/
+#newsBox{}
+ul{}
+li{}
+/*platBox-------------------------*/
+#platBox{}
+
+/*contentBox-------------------------*/
+#contentBox{}
+ul{}
+li{}
+/*sideBox-------------------------*/
+#sideBox{}
+
+/*fnbBox-------------------------*/
+#fnbBox{}
+
+/*footBox-------------------------*/
+#footBox{}
+h2{}
+}

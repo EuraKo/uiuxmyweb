@@ -1,0 +1,45 @@
+/*base(tabPc 동일기준 960px)*/
+/*wrap-------------------------*/
+#wrap{width: 100%;min-width: 60rem;height:auto ; }
+
+/*headBox-------------------------*/
+#headBox{width: 100%;height:5rem ;background-color:#333; }
+h1{width: 80%;height:100% ;background-color:#aaa;float: right; }
+
+/*gnbBox-------------------------*/
+#gnbBox{width: 100%;height:6.875rem ;background-color:#888; }
+
+/*lnbBox-------------------------*/
+#lnbBox{width: 100%;height:13.75rem ;background-color:#eee; }
+
+/*newsBox-------------------------*/
+#newsBox{width: 100%;height:auto ;background-color:#aaf; }
+.detale{width: 50%;height:40rem ;background-color:inherit;float: left;
+ }
+ul{width: 100%;height:100% ;background-color:inherit; }
+li{width: 50%;height:50% ;background-color:inherit;border: 0.0625rem solid #333;box-sizing:border-box;float: left;
+ }
+ li:nth-child(1){border-right: 0;border-bottom: 0;}
+ li:nth-child(2){border-bottom: 0;;}
+ li:nth-child(3){border-right: 0;}
+ #newsBox li:nth-child(3),
+ #newsBox li:nth-child(4)
+ {border-bottom: 0;}
+
+.main{width: 50%;height:40rem ;background-color:inherit; float: left;
+border: 1px solid #000;box-sizing: border-box;border-left: 0;}
+
+#newsBox .main{border-bottom: 0;}
+
+/*contentBox-------------------------*/
+#contentBox{width: 100%;height:40rem ;background-color:#faa; }
+ 
+
+/*playBox-------------------------*/
+#playBox{width: 100%;height:20rem ;background-color:#f77; }
+
+/*fnbBox-------------------------*/
+#fnbBox{width: 100%;height:31.875rem ;background-color:#555; }
+
+/*footBox-------------------------*/
+#footBox{width: 100%;height:5.625rem ;background-color:#000; }

@@ -1,0 +1,22 @@
+/*main_mob max480px*/
+@media screen and (max-width:480px) {
+#wrap{min-width: auto;}
+#headBox{;}
+h1{width: 15.625rem;}
+#gnbBox{}
+#lnbBox{}
+
+#newsBox{height: 60rem;}
+.detale{width: 100%;height:auto;}
+ul{}
+li{width: 100%;height: 20rem;border-bottom: 0.0625rem solid #000;}
+li:last-child{display: none;height: 0;}
+ul>li:nth-child(1){border-right:0.0625rem solid #000;}
+ul>li:nth-child(3){border-right:0.0625rem solid #000;}
+.main{display: none;}
+
+#contentBox{}
+#playBox{}
+#fnbBox{display: none;}
+#footBox{}
+}

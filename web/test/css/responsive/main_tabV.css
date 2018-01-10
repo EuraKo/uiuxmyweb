@@ -1,0 +1,19 @@
+/*main_tabV min481px~max767px*/
+@media screen and (min-width: 481px) and (max-width:767px){
+#wrap{min-width: auto;}
+#headBox{}
+h1{}
+#gnbBox{}
+#lnbBox{}
+#newsBox{}
+.detale{width: 100%;}
+ul{}
+li{}
+#newsBox li:nth-child(3){border-bottom: 0.0625rem solid #000;}
+#newsBox li:nth-child(4){border-bottom: 0.0625rem solid #000;}
+.main{width: 100%;border-left: 1px solid #000;border-top: 0;}
+#contentBox{}
+#playBox{}
+#fnbBox{}
+#footBox{}
+}

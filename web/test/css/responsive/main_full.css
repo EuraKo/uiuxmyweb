@@ -1,0 +1,17 @@
+/*main_full min 1367px*/
+@media screen and (min-width: 1367px){
+	#wrap{min-width: auto;}
+#headBox{}
+h1{}
+#gnbBox{}
+#lnbBox{}
+#newsBox{}
+.detale{}
+ul{}
+li{}
+.main{}
+#contentBox{}
+#playBox{}
+#fnbBox{}
+#footBox{}
+}
