@@ -1,0 +1,18 @@
+/*main tabV min 481px*/
+@media screen and (min-width: 481px){
+
+#wrap{}
+#headBox{}
+#gnbBox{}
+#contantBox{}
+ul{}
+li{width: 50%;height: 240px;float: left;}
+#hiddenBox{display: block;}
+#lnbBox{}
+#newsBox{}
+#playBox{}
+.play_area{display: none;}
+#fnbBox{}
+#footBox{}
+#logo{width: 60px;height: 60px;}
+}

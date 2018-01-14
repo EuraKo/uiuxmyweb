@@ -1,0 +1,17 @@
+/*main tabPc min 768px*/
+@media screen and (min-width: 768px){
+
+#wrap{}
+#headBox{}
+#gnbBox{}
+#contantBox{}
+ul{}
+li{}
+#lnbBox{}
+#newsBox{}
+#playBox{}
+.play_area{}
+#fnbBox{}
+#footBox{}
+#logo{}
+}

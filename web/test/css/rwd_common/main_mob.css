@@ -1,0 +1,19 @@
+/*main mobile max 480px*/
+@media screen and (max-width: 480px){
+
+#wrap{}
+#headBox{}
+#gnbBox{}
+#contantBox{}
+ul{}
+li{height: 240px;}
+li:last-child{height: 120px;}
+#hiddenBox
+#lnbBox{}
+#newsBox{}
+#playBox{}
+.play_area{display: none;}
+#fnbBox{}
+#footBox{padding: 0;height: 120px;}
+.logo{}
+}

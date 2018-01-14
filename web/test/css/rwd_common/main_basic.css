@@ -1,0 +1,20 @@
+/*base-----------------*/
+
+#wrap{height: auto;}
+#headBox{height: 420px;background-color: #ded2e4;}
+#gnbBox{height: 120px;background-color: #bfa8cb}
+
+#contantBox{height: auto;}
+ul{height: auto;}
+li{height: 480px;background-color: #9f80b2;}
+li:last-child{background-color: #785b8c;}
+
+#hiddenBox{display: none;height: 240px;background-color: #fff;}
+#lnbBox{height: 60px;background-color: #936c72}
+#newsBox{height: auto;background-color: #cccccc;}
+
+#playBox{height: 240px;padding: 30px;box-sizing: border-box;background-color: #758592;}
+.play_area{height: 100%;background-color: #613282;}
+#fnbBox{height: 120px;background-color: #009245;}
+#footBox{height: 210px;background-color: #00a99d;padding: 30px;box-sizing: border-box;}
+.logo{height: 100%;background-color: #a154fc;}

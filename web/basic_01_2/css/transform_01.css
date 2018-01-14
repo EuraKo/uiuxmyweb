@@ -7,7 +7,7 @@ line-height: 200px;background-color:rgba(100,255,255,0.5);border-right: 1rem;}
 
 /*translate: 이동(원래의 위치는 설정된 곳에 위치하고, 임의로 위치값을 변경시켜서 처리하게하는 기능)
 (x,y,z) translateX | translateY | translateZ(소문자가능)*/
-.translate>h2{transform:translateY(100px);}
+.translate>h2{transform:translatey(100px);}
 .translate>h2:hover{transform:translate(0);}
 /*rotate:회전기능 -각도는 수치 deg단위를 사용하는데,
 1바퀴, 2바퀴식의 260도로 나누어지는 수치는 trun의 수치를 사용,
@@ -15,8 +15,8 @@ line-height: 200px;background-color:rgba(100,255,255,0.5);border-right: 1rem;}
 rotate는 기본이 z 축으로 회전
 perspective:원근법(투시)을 적용시키기위해 생성된 기능으로, 자식요소에 transform기능을 사용하고, 부모에 perspective 속성을 사용하면 원근법이 적용, 0 0 right bottom
 이떄, 수치를 낮게 설정하면 가까운 거리를 생성하기 때문에 왜곡이 심해진다.*/
-.rotate{perspective: 1000px;}
-.rotate>h2{transform:rotateY(2turn);transform-origin:right bottom;transition: all 4000ms;}
+.rotate{perspective: 100px;}
+.rotate>h2{transform:rotateY(2turn);transform-origin:right top;transition: all 4000ms;}
 .rotate:hover>h2{transform:rotate(0);}
 
 /*skew : illustrator의 share와 동일한 기능으로 뒤틀기라는 의미를 가지고있다.
@@ -32,7 +32,7 @@ perspective:원근법(투시)을 적용시키기위해 생성된 기능으로, �
 .scale>h2{transform:scale(0);transition: all 300ms;}
 .scale:hover>h2{transform:scale(1,2);}
 
-/*transform(변형),tranlate(변형의속성),transition(움직임)*/
+/*transform(변형),translate(변형의속성),transition(움직임)*/
 /*-----------------------*/
 .transform_02{margin-top: 2rem;padding: 0.5rem;background-color:#aff }
 .multi_transform{width: 450px;height: 200px;background-color: #af5;}
