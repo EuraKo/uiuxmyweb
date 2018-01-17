@@ -1,0 +1,9 @@
+#qABox{width: 100%;height: auto;}
+#qABox>dl{width: 100%;height: auto;border-bottom: 5px solid #eee;padding: 0 90px;box-sizing: border-box;position: relative;}
+
+#qABox>dl:hover{
+                   border-bottom-color: #006086;}
+#qABox dt{height: 90px;line-height: 90px;}
+#qABox span{float: left;}
+#qABox i{font-size: 50px;float: right;margin-top: 20px;color: #888;}
+#qABox dd{display: none;height: 60px;line-height: 60px;}

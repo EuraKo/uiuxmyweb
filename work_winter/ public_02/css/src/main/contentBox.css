@@ -1,0 +1,12 @@
+#contentBox{width: 100%;height: auto;}
+#contentBox>ul{width: 100%;height: 100%;}
+#contentBox>ul>li{width: 25%;height: 240px;float: left;padding: 90px 45px;box-sizing: border-box;margin: 0 auto;}
+
+.icon_area{background-color: #eee;background-repeat: no-repeat;background-position: center;
+;}
+.couple{background-image: url(../../../img/couple_icon.png);
+}
+.family{background-image: url(../../../img/family_icon.png);
+}
+
+.text_area{background-color: #006086;color: #fff;text-align: center;font-size: 20px;}

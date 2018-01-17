@@ -1,0 +1,9 @@
+/* winter special q_a.css*/
+@import url('./all/wrap.css');
+@import url('./all/headBox.css');
+@import url('./all/gnbBox.css');
+@import url('./all/titleBox.css');
+@import url('./q_a/qABox.css');
+@import url('./q_a/searchBox.css');
+@import url('./all/fnbBox.css');
+@import url('./all/footBox.css');
