@@ -1,0 +1,12 @@
+/*test_03_animate.css*/
+#wrap{width: 100%;min-width: 960p;height: auto;background-color: #ccc;}
+h1{text-align: center;padding-top: 1rem;}
+.btn{width: 900px;height: auto;border-bottom: 3px solid  #f06;margin: 2rem auto;padding: 1rem 0;}
+button{padding: 0.5rem 1rem;box-sizing: border-box;background-color: #09c;color: #fff;font-size: 1.3rem;transform: all 1s ease-out;margin-left: 0.55rem;font-weight: bold;}
+
+.par{width: 100%;margin-top: 3rem;padding: 1rem;box-sizing: border-box;}
+.par>div{width: 300px;height: 300px;background-color: #5af;float: left;box-shadow:0.3rem 0.3rem 0.3rem #aaa;margin-right: 3rem;text-align: center;border:2px solid #f06;
+padding: 20px;box-sizing: border-box;font-weight: bold;}
+
+.reset{margin-top: 1rem;width: 200px;margin: 0 auto;}
+button:hover,button:focus{border-radius: 0.3rem;box-shadow: 0.3rem 0.3rem 0.3rem #aaa;}

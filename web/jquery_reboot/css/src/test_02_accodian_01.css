@@ -1,0 +1,12 @@
+#wrap{width: 100%;height: auto;}
+h1{width: 100%;text-align: center;background-color: #8fa;padding: 30px;box-sizing: border-box;color: #fff;}
+dl{width: 50%;height: auto;}
+dt{width: 100%;background-color: #a5a;padding: 10px;box-sizing: border-box;border-bottom: 5px solid #fff;}
+dt:hover{background-color: #55a;color: #fff;}
+button{width: 100%;height: 100%;background-color: inherit;font-size: 2rem;text-align: center;color: inherit;
+}
+dd{background-color: #eee;display: block;padding: 10px;box-sizing: border-box;
+
+}
+dd.show{display: block;
+}
