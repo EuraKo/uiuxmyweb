@@ -1,0 +1,9 @@
+//. 객체를 별도로 저장하는 방법 json
+{
+"nickname" : "xido",
+"username" : "lee do-hyeong",
+"job" : "educator",
+"realJob" : "designer",
+"old" : "no-comment",
+"career" :"17"
+}//json은 프로퍼티든 벨유는 무조건 쌍따옴표여야한다

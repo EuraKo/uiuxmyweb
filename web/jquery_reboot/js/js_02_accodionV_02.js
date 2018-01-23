@@ -8,7 +8,7 @@ var i = 0;//최초의 값을 기록하기위해서
 // console.log(accDd.length);
 
 for (;i< accDd.length; i++){
-ddHeight[i] = accDd.eq(i).innerHeight();
+ddHeight[i] = accDd.eq(i).innerHeight();//패딩값포함 outterHeight()보더 값 outterHeight(true)마진값도 포함!
 }
 console.log(ddHeight);//높이값
 
