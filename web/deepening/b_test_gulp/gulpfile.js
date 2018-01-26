@@ -12,15 +12,23 @@ var del         = require('del');
 var jquery      = require('jquery');
 // var jqueryui    = require('jqueryui');
 var fontAwesome = require('node-font-awesome');
+var cached      = require('gulp-cached');
+var watch      = require('gulp-watch');
 
 //장식기능----------------------------------
 var chalk       = require('chalk');
 //안쓰는 모듈은 변수를 지워야한다. 아니면 다 오류남
 
+// 기타---------------------------------
+// 서버구동
+var browserSync = require('browser-sync').create();
 
 //------------------------------------
 //기본 경로설정
-var url = {before:'./public/src/',after:'./public/dist/'};//가끔 노드모듈로 기본을 지정해서 ./달기
+var url = {module:'./node_modules/',
+           before:'./public/src/',
+           after:'./public/dist/'
+           };//가끔 노드모듈로 기본을 지정해서 ./달기
 
 
 //------------------------------------
@@ -61,7 +69,7 @@ gulp.task('makefile',function(){
 writeFile.sync(url.before + 'index.html','<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <script>\n    window.location = "./html/main.html";\n  </script>\n  <title>Document</title>\n</head>\n<body>\n  \n</body>\n</html>');//한줄로 써서불러와야하기때문에 \n으로 해야 강제줄바꿈됨
 
 //main.html----------------------
-writeFile.sync(url.before+'html/main.html','<!DOCTYPE html>\n<html lang="ko-KR">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<!--[if lte IE 9]>\n<script src="../js/base/html5shiv-printshiv.js"></script>\n<script src="../js/base/html5shiv.js"></script>\n<script src="../js/base/modernizr/cli.js"></script>\n<script src="../js/base/css3pie/PIE_IE9.js"></script>\n<script src="../js/base/respond.js"></script>\n<![endif]-->\n<!-- ==========================font import=========== -->\nhref="../fontAwesome/css/font-awesome.min.css">\n==========css basic========= -->\nhref="../css/base/reset.css">\nhref="../css/base/common.css">\n==========design ======== -->\nhref="../css/src/index.css">\n==========favicon =============== -->\nicon" href="../favicon.png">\nn" href="../favicon.png" type="img/x-icon">\n<title>sitaname</title>\n</head>\n<body>\n#wrap>header#headBox+section#bannerBox+article#contentBox+footer#footBox\n<!-- script -->\n<script src="../js/base/jquery-3.2.1.js"></script>\n<script src="../js/base/jquery-ui.js"></script>\n<script src="../js/src/js"></script>\n</body>\n</html>');
+writeFile.sync(url.before+'html/main.html','<!DOCTYPE html>\n<html lang="ko-KR">\n<head>\n    <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <meta http-equiv="X-UA-Compatible" content="IE=edge">\n  <!--[if lte IE 9]>\n    <script src="../ie/lt-ie-9.min.js"></script>\n  <![endif]-->\n  <!-- ==========================font import=========== -->\n  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">\n  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">\n <link rel="stylesheet" href="../font/transfonterNanum/stylesheet.css">\n <link rel="stylesheet" href="../fontAwesome/css/font-awesome.css">\n  <!-- ============================css basic========= -->\n  <link rel="stylesheet" href="../css/base/reset.css">\n  <link rel="stylesheet" href="../css/base/common.css">\n  <!-- ============================design ======== -->\n  <link rel="stylesheet" href="../css/src/index.css">\n  <!-- ============================favicon =============== -->\n  <link rel="apple-touch-icon" href="../favicon.png">\n  <link rel="shortcut icon" href="../favicon.png" type="img/x-icon">\n    <title>sitaname</title>\n</head>\n<body>\n  <!-- script -->\n    <script src="../js/base/jquery-3.2.1.js"></script>\n    <script src="../js/base/jquery-ui.js"></script>\n    <script src="../js/src/js"></script>\n    \n</body>\n</html>');
 
 //reset.css----------------------
 writeFile.sync(url.before+'css/base/reset.css','/* reset.css */\n/* variable:color, size, font  */\n/* \n* color: *명도대비 기준으로 제작\n      - primary : #d07\n      - main : #faa\n      - point :\n      - font1 : #333\n      - font2 : #777\n      - font3 : #fff\n      - link :  #d07\n      - sub1 :\n      - sub2 :\n      - white : #fdfdfd\n      - gray1 : #333\n      - gray2 : #777\n      - black : #171717\n* size:* 접근성 크기의 내용을 기준\n* 인쇄의 경우는 기준의 폰트크기는 : 9pt, \n* 웹의 경우는 12pt를 권장 => 영문, 그래픽이미지일경우\n      - primary : 16px;  == 1rem;\n      - h1(bold) :  32px ==> 2rem;\n      - h2(bold) :  29px ==> 1.8125rem;\n      - h3(bold) :  28px ==> 1.75rem;\n      - h4(bold) :  24px ==> 1.5rem;\n      - h5(bold) :  22px ==> 1.375rem;\n      - h6(bold) :  20px ==> 1.25rem;\n      - big1 : 30pt ==> 2.5rem\n      - big2 : 27pt ==> 2.25rem\n      - narmal : 12pt ==> 1rem\n    \n* font:\n      - english : Roboto, "myriad pro", arial\n      - korean  : "Nanum Gothic Coding", dotum\n      - basic   : monospace, sans-serif\n* border:\n      - thin :  border:1px solid #333\n      - normal: border: 2px solid #777\n      - bold :  border: 5px solid #d07\n* responsive:\n      - mobileV :\n      - mobileH :\n      - tableV:\n      - tableH:\n      - pc :\n      - pcfull :\n*/\n/* base */\nhtml,body{width: 100%; height: 100%; \n        margin:0; padding:0; color:#333; font-size:16px; font-size:1rem;\n        font-family:Roboto,"myriad pro",arial,"Nanum Gothic Coding",dotum,monospace,sans-serif;   \n        -webkit-text-size-adjust: 100%;\n        -ms-text-size-adjust: 100%;}\nh1, h2, h3, h4, h5, h6, p, pre, ul, ol, li, dl, dt, dd, div, \ntable, thead, tbody, tfoot, tr, th, td, \nform, fieldset, legend, input, textarea, select,\na, img,figcaption, figure{\n  margin:0; padding:0; border:0; outline:0; \n  color:inherit;  font-size:inherit; font-family:inherit;}\ntable,tr,td,th,thead,tbody,tfoot{border-collapse:collapse; border-spacing:0; }\nthead{background-color:#d07; color:#fff; text-indent:0;}\ntbody>tr:nth-of-type(2n+1){background-color:#faa; text-indent:0.5rem;}\ntbody>tr:nth-of-type(2n){background-color:#fff; text-indent:0.5rem;}\ntfoot{background-color: #7cf; font-weight: bold;}\nth,td{border:1px solid #777; border-left:0; border-right: 0;}\n/*th:first-of-type, td:first-of-type{border-left:0;} \nth:last-of-type,  td:last-of-type{border-right: 0;} */\nhr{margin: 0; padding: 0; border-bottom:1px solid #333;}\naddress, em, wbr, strong, ins, del, abbr{font-style:normal; font-weight:normal;}\nh1{font-size: 32px; font-size: 2rem;}\nh2{font-size: 29px; font-size: 1.8125rem;}\nh3{font-size: 28px; font-size: 1.75rem;}\nh4{font-size: 24px; font-size: 1.5rem;}\nh5{font-size: 22px; font-size: 1.375rem;}\nh6{font-size: 20px; font-size: 1.25rem;}\nul,ol,li{list-style:none; }\na{text-decoration:none; color:#777;}\na:hover, a:active{text-decoration:underline; color:#D07;}\ncode{ padding:6px; border:1px solid #777; background-color: #7af; }\nkbd {font-size: 1.2em; font-weight: bold; color:#fff; background-color: #333; border-radius:0.3rem;}\n/* form ============================================ */\ninput[type="text"],\ninput[type="password"],\ninput[type="search"],\ninput[type="email"],\ninput[type="tel"],\ninput[type="number"],\ninput[type="date"],\ninput[type="month"],\ninput[type="year"],\ninput[type="week"],\ninput[type="url"],\ntextarea{cursor:pointer; box-sizing:border-box; border:1px solid #777; border-radius:0;\n      background-color: #fff; text-indent:5px;} \ninput::-webkit-input-placeholder,\ninput::-moz-placeholder,\ninput:-ms-input-placeholder,\ninput:-moz-placeholder,\ninput:placeholder {color:#09a;}\nselect{-webkit-appearance:listbox;\n       -moz-appearance:listbox;\n        appearance:listbox; border: 0;}\ninput[type="submit"],\ninput[type="reset"],\ninput[type="image"],\ninput[type="file"],\ninput[type="button"],\nbutton, select {cursor:pointer; border-radius:0; \n  margin: 0; padding: 0; border: 0; outline: 0;}\n/*  html5 ============================================  */\nheader, nav, article, section, footer, aside, main, figure, figcaption, picture{\n  display:block; color:inherit;}');
@@ -89,7 +97,8 @@ gulp.task('cleanDist',function(){
 // 기능 추가
 // jquery
 gulp.task('jquery',function(){
-gulp.src(['./node_modules/jquery/dist/jquery.min.js','./node_modules/jqueryui/jquery-ui.min.js'])
+gulp.src([url.module + 'jquery/dist/jquery.min.js',
+          url.module + 'jqueryui/jquery-ui.min.js'])
 .pipe(gulp.dest(url.before+'js/base/'));
 });
 gulp.task('fontAwesomeFonts',function(){
@@ -107,13 +116,59 @@ gulp.task('cleanCss',function(){
  return del([url.after+'css'], {forct: true});
 });
 
+// -----------------------------------------
+//ie9 기능(모듈설치후 불러오지 않음)
+gulp.task('ie9',function(){
+  gulp.src(url.module + 'lt-ie-9/lt-ie-9.min.js')
+  .pipe(gulp.dest(url.before + 'ie'));
+});
 
+// -----------------------------------------
+// html,css,js설정 
+gulp.task('html',function(){
+  return gulp.src(url.before+'html')
+             .pipe(cached('htmlFiles'))
+             .pipe(browserSync.stream());
+});//html
+gulp.task('css',function(){
+  return gulp.src(url.before+'css')
+             .pipe(cached('cssFiles'))
+             .pipe(browserSync.stream());
+});//css
+gulp.task('js',function(){
+  return gulp.src(url.before+'js')
+             .pipe(cached('jsFiles'))
+             .pipe(browserSync.stream());
+});//js
+
+// browserSyncr 기능처리하기(서버구동)
+gulp.task('browserSync',['html','css','js'],function() {
+    browserSync.init({
+        server: {
+            baseDir : url.before
+        }
+    });
+});
+// watch(실시간 감지기능 처리)
+gulp.task('watch',function(){
+watch(url.before+'html',function(){
+  gulp.start('html');
+});
+watch(url.before+'css',function(){
+  gulp.start('css');
+});
+watch(url.before+'js',function(){
+  gulp.start('js');
+});
+});
+
+// -----------------------------------------
 //2가지 이상 모듈 사용시 통합기능사용
 // 최초makedir, makefile 기능 처리하기
-gulp.task('fontAwesome',['fontAwesomeFonts','fontAwesomeCss'])
-gulp.task('make', ['makedir','makefile','jquery','fontAwesome']);
+gulp.task('fontAwesome',['fontAwesomeFonts','fontAwesomeCss']);
+gulp.task('make', ['makedir','makefile','jquery','fontAwesome','ie9']);
 
-// gulp.task('default',[]);
+gulp.task('default',['browserSync','watch']);
 // gulp 라고만 쓰면 파일폴더 생성하게 하는 기능
 
 
