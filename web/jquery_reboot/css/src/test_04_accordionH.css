@@ -1,0 +1,9 @@
+/*test_04_accordionH.css*/
+#wrap{width: 100%;height: auto;margin: 0 auto;}
+h1{width: 100%;text-align: center;padding: 30px;box-sizing: border-box;background-color: #f33;color: #fff;text-shadow: 0.1rem 0.1rem 0.1rem #000;}
+.arccordion{width: 70%;height: auto;margin: 0 auto;margin-top: 60px;border:10px solid #aaa;}
+dl{width: 100%;height: 100%;}
+dl>dt,dl>dd{float: left;}
+dt{height: 100%;border-right: 2px solid #acc;box-sizing: border-box;}
+button{width: 100%;height: 100%;}
+dd{width: 50%;padding: 5px;box-sizing: border-box;}
