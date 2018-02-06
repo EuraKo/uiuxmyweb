@@ -1,0 +1,26 @@
+/* css로 변환시 남아있는 주석 */
+// 한줄주석, css로 변환이 안되는 주석
+// preprose떄문에 css에 자동생성되는것
+
+@import './src/var';
+
+
+
+body{background-color: $primary;
+background-image: url($url+'test.png');}
+#wrap{background-color: #fff; color: $primary;}
+
+h1{background-color: transparent;color: lighten($primary,30%);
+
+&:hover{background-color: rgba(#f6f,0.5);
+color: darken($primary, 25%);}
+
+&>a{color: #fff;
+  &:hover{color: #fff;
+    &:before{color: #fff;}
+    &:after{color: #fff;}
+  }// a:hover
+  &:focus{color: #fff;}
+
+}//a
+}//h1 
