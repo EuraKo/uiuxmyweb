@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- js_12_plugin_01 -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if lte IE 9]>
+    <script src="../js/base/html5shiv-printshiv.js"></script>
+    <script src="../js/base/html5shiv.js"></script>
+    <script src="../js/base/modernizr/cli.js"></script>
+    <script src="../js/base/css3pie/PIE_IE9.js"></script>
+    <script src="../js/base/respond.js"></script>
+  <![endif]-->
+
+  <!-- ==========================font import=========== -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+  <!-- <link rel="stylesheet" href="../font/transfonterNanum/stylesheet.css"> -->
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+  <!-- ============================css basic========= -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <!-- ============================design ======== -->
+  <link rel="stylesheet" href="../css/src/js_12_plugin_01.css">
+  <!-- ============================favicon =============== -->
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="shortcut icon" href="../favicon.png" type="img/x-icon">
+
+    <title>sitaname</title>
+
+</head>
+<body>
+<h1>plugin만들기의 간단한 이해</h1>
+  <!-- script -->
+    <script src="../js/base/jquery-3.2.1.js"></script>
+    <script src="../js/base/jquery-ui.js"></script>
+    <script src="../js/js_12_plugin_01.js"></script>
+    <script>
+   (function($){
+    // 메소드 체이닝(연결하는것)
+    // css 
+    // background-color:#afc; background-image:url();
+    // background:#333, url(png),no-repeat, 0 9;
+    // background-image:url(1.jpg), url(2.jpg), url(3.jpg);
+    // 가장앞에 오는 이미지는 1번이다.div구조랑 반대임.
+    // background-repeat:repeat,no-repeat,repeat-x;
+    // background-position:bottom right,top center, 0 0;
+
+// $('h1').css({color:'#0af'});
+$.fn.myColor = function(){
+  this.css({color:'#0dd'});
+  return this; //반환을 만들어주면 메소드 체이닝이 가능하다.
+};
+/*기본형식
+var obj ={test :{t2 : "#afa"}};
+console.log(obj.test.t2);
+위에꺼 풀어쓰면 이렇게됨 js의 기본형태임 꼭알아두기!
+$={
+  fn:{
+    myColor:function(){
+      this.css('css','#0dd');
+    }
+  }
+}
+jsLint 문법점검해줌 띄어쓰기하나까지 빡빡하게굼
+jsHint 문법점검이나 위보단 스무스함*/
+    // $('h1').css('color','#450').delay(1000).fadeOut(1000);
+
+    // 가로형 show/hide만들기
+    $.fn.wideOpen = function(){
+      this.css({'display':'block','width':'0','height':'40px','overflow':'hidden','background':'#cca'});
+      this.animate({'width':'100%'},1000);
+      return this;
+    }
+
+        $.fn.wideClose = function(){
+
+      this.animate({'width':0},1000,function(){
+        $(this).css({'display':'none'});
+      });
+      return this;
+    }
+// return반환하는기능으로 필기시험보고 체점하고 통보(return)의개념임,줬으니깐 내놔
+// 그전에 안썻던건 함수안에서 모든것이 실행되었기때문.밖으로 던질려면 return을 써야함.
+// why?값을 얻기위해, 원하는 결과를 도출하기위해
+    // 위 기능을 하나로 만들기
+$.fn.wideView = function(action){
+switch(action){
+case 'open':
+      this.css({'display':'block','width':'0','height':'40px','overflow':'hidden','background':'#cca'});
+      this.animate({'width':'100%'},1000);
+break;
+
+case 'close':
+      this.animate({'width':0},1000,function(){
+      $(this).css({'display':'none'});
+    });
+break;
+}
+return this;
+};
+// -------------------------
+//기본옵션설정후, 옵션을 변경해서 사용할 수 있도록 처리!
+$.fn.myGrahpic = function(option){
+  var set = $.extend({
+    color:'#333',
+    backgroundColor:'#fca'
+  },option);
+// $.extend의 간단한 의미해석을 해보자면
+// if(color == false){color:'#03a'}else{color:option의 설정값};
+
+// $.extend() 맨앞으로 가져와서 합친다.
+// var obj = {a:10, b:4};
+// var obj2 = {b:100};
+// var plus = $.extend(obj,obj2);
+// var plusMore = $.extend({},obj,obj2);
+
+/*var plus 결과를 설명
+plus == obj == {a:10, b:100};
+obj2 == {b:100};
+*$.extend()메소드는 merge의 기능을 가지며, 뒤에오는 값을 앞에 덮어 씌워합치는 기능
+*/
+
+/* var plusMore 결과를 설명
+plusMore == {a:10,b:100};
+obj == {a:10};
+obj2 == {b:100};
+*/
+
+  return this.css({color:set.color, backgroundColor:set.backgroundColor});
+};
+
+})(this.jQuery);
+//this의 의미 ,
+//1: window(과거 설계의 오류로 인한 현상),맨마지막 this 안써도되는것
+//2: 선택자(객체)
+    </script>
+
+    <script>
+      //---------------------------------
+      (function($){
+// 1
+// $('h1').myColor() //기본플러그인 만들기
+// 2
+// $('h1').myColor().delay(1000).fadeOut(1000);//메소드 체인넣기법으로 처리되도록
+// 3
+// $('h1').hide();
+// // $('h1').wideOpen().wideClose();
+// $('body').on('click',function(){
+
+// $('h1').wideView('open');
+// });
+
+// $('h1').on('click',function(){
+
+// $('h1').wideView('close');
+// });
+// 4
+$('h1').myGrahpic({color:'#f06',backgroundColor:'#acc'});
+})(this.jQuery);
+      //--------------------------
+    </script>
+</body>
+</html>
