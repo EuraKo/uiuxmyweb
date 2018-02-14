@@ -1,0 +1,14 @@
+// _mixin.scss 함수를 지정하는것.
+$url:'../img/';
+
+@mixin linkBox($r:no-repeat,$p:center,$i:$url+'a.jpg',$j:$url+'a.jpg'){
+  //인자를 지정해서 기본값을 설정할수 있다.그러나 부분만 되는것이아니기에 줄것이면 다줘라.
+  // 못해도 범위라도 잡아놔야함
+a{display: block;background-repeat: $r;background-position: $p; background-image: url($i);
+&:hover,
+&:focus,
+&.focus{background-image: url($j);}
+>span{width: 0;height: 0;display: block;position: absolute;z-index: -1;}
+}//a 네스팅 효과라고한다. 꺽쇠만 &뺴도됨. 다른건 &안쓰면 자손선택자로 선택해버리기때문에 &로 자기자신이라고 표시해줘야함
+}//linkbox
+

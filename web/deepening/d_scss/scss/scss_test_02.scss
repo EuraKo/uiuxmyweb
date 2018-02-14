@@ -1,0 +1,21 @@
+// scss_test_02.scss
+// scss_test_02.css
+@import "src/var";
+@import "src/mixin";
+
+$url:'../../../img/test/';
+// mixin에서 값을 줘도 여기서 재할당하면 재적용됨.
+
+body{background-color: $primary;}
+#headBox>h1{@include linkBox($i:$url+'a.jpg',$j:$url+'b.jpg');
+}
+#gnb>ul>li:first-child{width: 100px;height: 100px;
+@include linkBox($r:repeat-x,$p:0 0,$i:'../img/c.jpg',$j:'../img/d.jpg');
+}
+
+// 반복문
+@for $i from 1 through 6{
+#gnb>ul>li:first-child(#{$i}){//#{} 아이디가 아닌 인터폴레이션이라는 기법임
+width: 100px;height: 50px;@include linkBox($r:repeat-x,$p:0 0,$i:'../img/c.jpg',$j:'../img/d.jpg');}
+#gnb>ul>li.banner_#{$i}{width: 100px;height: 50px;@include linkBox($r:repeat-x,$p:0 0,$i:'../img/c.jpg',$j:'../img/d.jpg')}
+}
