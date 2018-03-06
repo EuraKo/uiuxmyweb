@@ -1,0 +1,7 @@
+/*js_17_make_map_01.css*/
+#wrap{width: 100%;min-width: 60rem;margin: auto;background-color: #ccc;}
+#headBox{width: 60rem;margin: auto;background-color: #0af;}
+#headBox>h1{text-align: center;color: #fff;}
+
+.map{width: 100%;height: 20rem;border: 2px solid  #555;border-left: 0;  border-right: 0;}
+#map_box{width: 100; height: 100%;background-color: #aaa;}

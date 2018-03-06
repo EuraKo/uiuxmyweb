@@ -1,0 +1,9 @@
+/*js_18_scroll_image_01.css*/
+#wrap{width: 960px;height: auto;margin: auto;}
+#headBox{width: 100%;height: 100px;background-color: #ccc;}
+#scrollBox{width: 100%;height: auto;background-color: #caa;}
+#scrollBox>img{width: 100%;height: auto;display: none;float: left;
+} 
+/* float: left;를 주는이유:이미지에 heigth:auto주었을 떄 분홍색이 삐져나오경울 float: left;를 주면 딱맞는다*/
+#contentBox{width: 100%;height: 1000px;background-color: #0cc;}
+#footBox{width: 100%;height: 120px;background-color: #333;}
